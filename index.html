@@ -13,22 +13,24 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<!-- CSS -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="plugin/chartjs/Chart.min.css">
 	<link rel="stylesheet" href="css/theme/white.css" id="theme">
 
-
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/monokai.css">
+	<!-- CSS -->
 
-
+	<!-- Scrips -->
 	<script src="plugin/jquery/jquery.min.js"></script>
 	<script src="plugin/popper/popper.min.js"></script>
 	<script src="plugin/moment/moment.min.js"></script>
 	<script src="plugin/chartjs/Chart.min.js"></script>
+	<!-- Scrips -->
+
 
 	<!-- Printing and PDF exports -->
 	<script>
@@ -52,478 +54,1031 @@
 		<div class="slides">
 
 			<!-- Capa -->
-				<section>
-					<h2>Sistema de Gestão patrimoial</h2>
-					<h3>Caso da Universidade Zambeze</h3>
-					<p>
-						<small>Autor: <a href="https://samuel-bie.github.io">Samuel Anastácio Bié</a></small>
-					</p>
-				</section>
+			<section>
+				<h2>Sistema de Gestão patrimoial</h2>
+				<h3>Caso da Universidade Zambeze</h3>
+				<p>
+					<small>Autor: <a href="https://samuel-bie.github.io">Samuel Anastácio Bié</a></small>
+				</p>
+			</section>
 			<!-- Capa -->
 
 			<!-- Introducao -->
+			<section>
 				<section>
-					<section>
-						<h2 class="text-left text-info">Introdução</h2>
-						<p class="text-justify">
-							A administração ou gestão patrimonial é uma atividade que está baseada em ações que visam assegurar, por meio de registos e relatórios, a coleta de dados relativos a identificação, existência, quantificação, localização, condições de uso e histórico dos bens patrimoniais, desde a sua primeira inclusão no património, até a sua remoção (baixa final).​
-						</p>
-					</section>
-
-					<section>
-						<h2 class="text-left text-info">Introduçao</h2>
-						<p class="text-justify">
-							Este trabalho trata de um sistema de administração patrimonial a ser implantado na Direção de Construção Administração Patrimonial da Universidade Zambeze para a gestão patrimonial descentralizada no que diz respeito ao controle de bens patrimoniais sob a guarda e responsabilidade desta.
-						</p>
-					</section>
+					<h2 class="text-left text-info">Introdução</h2>
+					<p class="text-justify">
+						A administração ou gestão patrimonial é uma atividade que está baseada em ações que visam
+						assegurar, por meio de registos e relatórios, a coleta de dados relativos a identificação,
+						existência, quantificação, localização, condições de uso e histórico dos bens patrimoniais,
+						desde a sua primeira inclusão no património, até a sua remoção (baixa final).​
+					</p>
 				</section>
+
+				<section>
+					<h2 class="text-left text-info">Introduçao</h2>
+					<p class="text-justify">
+						Este trabalho trata de um sistema de administração patrimonial a ser implantado na Direção de
+						Construção Administração Patrimonial da Universidade Zambeze para a gestão patrimonial
+						descentralizada no que diz respeito ao controle de bens patrimoniais sob a guarda e
+						responsabilidade desta.
+					</p>
+				</section>
+			</section>
 			<!-- Introducao -->
 
 			<!-- Justificatica -->
+			<section>
 				<section>
-					<section>
-						<h2 class="text-left text-info">Justificativa</h2>
-						<canvas id="myChart" width="400" height="200"></canvas>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
+					<h2 class="text-left text-info">Justificativa</h2>
+					<canvas id="myChart" width="400" height="200"></canvas>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+				</section>
+				<script>
+					var ctx = document.getElementById('myChart').getContext('2d');
+					var myChart = new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: ['2014', '2015', '2016', '2017', '2018'],
+							datasets: [{
+								data: [4826, 6508, 9407, 12813, 12453],
+								backgroundColor: [
+									'#ff6384',
+									'#36a2eb',
+									'#9966ff',
+									'#4bc0c0',
+									'#ffcd56'
+								],
+								borderColor: [
+									'rgba(54, 162, 235, 1)',
+									'rgba(255, 206, 86, 1)',
+									'rgba(75, 192, 192, 1)',
+									'rgba(153, 102, 255, 1)',
+									'rgba(255, 159, 64, 1)'
+								],
+								borderWidth: 1,
 
-					</section>
-					<script>
-						var ctx = document.getElementById('myChart').getContext('2d');
-						var myChart = new Chart(ctx, {
-							type: 'bar',
-							data: {
-								labels: ['2014', '2015', '2016', '2017', '2018'],
-								datasets: [{
-									data: [4826, 6508, 9407, 12813, 12453],
-									backgroundColor: [
-										'#ff6384',
-										'#36a2eb',
-										'#9966ff',
-										'#4bc0c0',
-										'#ffcd56'
-									],
-									borderColor: [
-										'rgba(54, 162, 235, 1)',
-										'rgba(255, 206, 86, 1)',
-										'rgba(75, 192, 192, 1)',
-										'rgba(153, 102, 255, 1)',
-										'rgba(255, 159, 64, 1)'
-									],
-									borderWidth: 1,
-
+							}]
+						},
+						options: {
+							scales: {
+								yAxes: [{
+									ticks: {
+										beginAtZero: true,
+										fontSize: 20
+									}
+								}],
+								xAxes: [{
+									ticks: {
+										beginAtZero: true,
+										fontSize: 20
+									}
 								}]
 							},
-							options: {
-								scales: {
-									yAxes: [{
-										ticks: {
-											beginAtZero: true,
-											fontSize: 20
-										}
-									}],
-									xAxes: [{
-										ticks: {
-											beginAtZero: true,
-											fontSize: 20
-										}
-									}]
-								},
-								title: {
-									fontSize: 20,
-									display: true,
-									text: 'Relatorio de Bens Inventariados'
-								},
-								legend: {
-									display: false,
-									position: 'right',
-									maxWidth: 100,
-									onClick: null
-								},
-								tooltips:{
-									titleFontSize:15,
-									bodyFontSize:25,
-								}
+							title: {
+								fontSize: 20,
+								display: true,
+								text: 'Relatorio de Bens Inventariados'
+							},
+							legend: {
+								display: false,
+								position: 'right',
+								maxWidth: 100,
+								onClick: null
+							},
+							tooltips: {
+								titleFontSize: 15,
+								bodyFontSize: 25,
 							}
-						});
-					</script>
+						}
+					});
+				</script>
 
-					<section>
-						<h3 class="text-left text-info">Justificativa</h3>
-						<p class="text-justify">
-							Tomando em análise os relatórios dos bens patrimoniais dos últimos 5 anos, estes mostram que em 2014 a Unizambeze contabilizava um total de 4.826 bens móveis permanentes tendo este número crescido cerca para 12.453 bens imoveis em 2018, tendo em conta que nesse período ocorreram para alem do cadastro também movimentações, abates, transferências. Nesse contexto a realização dessas operações sobre esses bens é um aspeto inviável pois a gestão destes atualmente é feita de maneira centralizada.
-						</p>
-					</section>
+				<section>
+					<h3 class="text-left text-info">Justificativa</h3>
+					<p class="text-justify">
+						Tomando em análise os relatórios dos bens patrimoniais dos últimos 5 anos, estes mostram que em
+						2014 a Unizambeze contabilizava um total de 4.826 bens móveis permanentes tendo este número
+						crescido cerca para 12.453 bens imoveis em 2018, tendo em conta que nesse período ocorreram para
+						alem do cadastro também movimentações, abates, transferências. Nesse contexto a realização
+						dessas operações sobre esses bens é um aspeto inviável pois a gestão destes atualmente é feita
+						de maneira centralizada.
+					</p>
 				</section>
+			</section>
 			<!-- Justificatica -->
 
 
+			<!-- Problema -->
+			<section>
+				<h2 class="text-left text-info">Problema</h2>
+				<br>
+				<p class="text-justify text-muted">
+					De quais formas o processo de administração patrimonial na Universidade Zambeze pode ser feito de
+					forma descentralizada e independente?
+				</p>
+			</section>
+			<!-- Problema -->
 
-
+			<!-- Hipoteses -->
+			<section>
+				<h2 class="text-left text-info">Hipótese</h2>
+				<p class="text-justify">
+					A implementação de um sistema de informação para gestão patrimonial aberto, pode descentralizar e
+					garantir independência ao gerenciamento do património a nível da Universidade.
+				</p>
+			</section>
+			<!-- Hipoteses -->
 
 			<!-- Objectivos -->
-				<section>
-					<h2 class="text-left text-info">Problema</h2>
-					<br>
-					<p class="fragment text-justify text-muted">
-						De quais formas o processo de administração patrimonial na Universidade Zambeze pode ser feito de forma descentralizada e independente?
-					</p>
-				</section>
-			<!-- Objectivos -->
-
-
-			<!-- Objectivos -->
+			<section>
 				<section>
 					<h2 class="text-left text-info">Objectivos</h2>
-					<p class="text-justify"></p>
+					<p class="text-left">Objectivo Geral</p>
+					<p class="text-left pt-2">Propor uma aplicação web de gestão patrimonial.​</p>
 				</section>
+
+				<section>
+					<h2 class="text-left text-info">Objectivos</h2>
+					<p class="text-left">Objectivos especificos</p>
+					<p class="text-justify pt-1" style="font-size: 25pt">Conhecer a situação atual do processo de
+						administração patrimonial usados atualmente na DCAP UniZambeze;</p>
+					<p class="text-justify pt-1" style="font-size: 25pt">Desenhar conceitualmente e estruturalmente uma
+						plataforma de administração patrimonial de um ponto de vista de sistema. ​</p>
+					<p class="text-justify pt-1" style="font-size: 25pt">Desenvolver um protótipo de um sistema de
+						administração patrimonial.​</p>
+					<p class="text-justify pt-1" style="font-size: 25pt"> Criar um protótipo de um mecanismo de
+						descentralização e interligação da plataforma de administração patrimonial a outros sistemas.
+					</p>
+				</section>
+			</section>
 			<!-- Objectivos -->
 
-
+			<!-- Delimitacao de pesquisa -->
 			<section>
-				<h2>Touch Optimized</h2>
-				<p>
-					Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your
-					slides.
+				<h2 class="text-left text-info">Delimitação de pesquisa</h2>
+				<p class="pt-2 text-justify">
+					Busca da criação de um sistema que possa estar interligado e ou comunicar-se ao módulo de
+					administração patrimonial do SISTAFE assim como a criação de um mecanismo que possa garantir a
+					integração deste a outros sistemas, para permitir o desenvolvimento de novas funcionalidades e
+					inclusão de novas plataformas para gestão de patrimônio.
 				</p>
 			</section>
+			<!-- Delimitacao de pesquisa -->
 
-			<section data-markdown>
-				<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-			</section>
-
+			<!-- Metodologias: Tecnologias utilizadas -->
 			<section>
-				<section id="fragments">
-					<h2>Fragments</h2>
-					<p>Hit the next arrow...</p>
-					<p class="fragment">... to step through ...</p>
-					<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span
-							class="fragment">slide.</span></p>
+				<h4 class="text-left text-info">Metodologias: Tecnologias utilizadas</h4>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th scope="col" class="text-left">Lado do cliente</th>
+							<th scope="col" class="text-right">Lado do servidor</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-left">Vue JS</td>
+							<td class="text-right">Apache 2.0</td>
+						</tr>
+						<tr>
+							<td class="text-left">HTML</td>
+							<td class="text-right">PHP</td>
+						</tr>
+						<tr>
+							<td class="text-left">CSS</td>
+							<td class="text-right">MySql</td>
+						</tr>
+						<tr>
+							<td class="text-left">JavaScript</td>
+							<td class="text-right">Laravel</td>
+						</tr>
+						<tr>
+							<td class="text-left"></td>
+							<td class="text-right">REDIS e Memcached</td>
+						</tr>
+					</tbody>
+				</table>
 
-					<aside class="notes">
-						This slide has fragments which are also stepped through in the notes window.
-					</aside>
+			</section>
+			<!-- Metodologias: Tecnologias utilizadas -->
+
+			<!-- Administração patrimonial -->
+			<section data-background="images/gestor.jpg">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h2 class="text-black text-left pt-5 mt-5">Administração<br>Patrimonial</h2>
+			</section>
+			<!-- Administração patrimonial -->
+
+			<!-- Património -->
+			<section>
+				<h2 class="text-info text-left">Património</h2>
+				<p class="text-justify" style="font-size: 25pt">
+					O patrimônio é o objeto administrado que serve para propiciar, às entidades, a obtenção de seus
+					fins. <br>
+					Para que um patrimônio seja considerado como tal, ele deve atender a dois requisitos:​
+					<ul class="mt-1">
+						<li class="text-justify pr-2" style="font-size: 22pt"><span>O elemento ser componente de um
+								conjunto que possua conteúdo econômico e avaliável em moeda.​</span></li>
+						<li class="text-justify pr-2" style="font-size: 22pt">Exista interdependência dos elementos
+							componentes do patrimônio e vinculação do conjunto a uma entidade que vise a alcançar
+							determinados fins</li>
+					</ul>
+				</p>
+			</section>
+			<!-- Património -->
+
+			<!-- Património do estado -->
+			<section data-background="images/emblema-moz.png" data-background-size="contain"
+				data-background-opacity="0.04">
+				<h2 class="text-info text-left">Património do estado</h2>
+				<p class="text-justify font-weight-bolder" style="font-size: 25pt">
+					O patrimônio é o objeto administrado que serve para propiciar, às entidades, a obtenção de seus
+					fins. <br>
+					Para que um patrimônio seja considerado como tal, ele deve atender a dois requisitos:​
+					<br />
+					<ul class="mt-1">
+						<li class="text-justify pr-2 font-weight-bolder" style="font-size: 22pt">
+							<span>O elemento ser componente de um conjunto que possua conteúdo econômico e avaliável em
+								moeda.​</span>
+						</li>
+						<li class="text-justify pr-2 font-weight-bolder" style="font-size: 22pt">Exista interdependência
+							dos elementos componentes do patrimônio e vinculação do conjunto a uma entidade que vise a
+							alcançar determinados fins</li>
+					</ul>
+				</p>
+			</section>
+			<!-- Património do estado -->
+
+			<!-- Gestão patrimonial -->
+			<section>
+				<h2 class="text-info text-left">Gestao de Património</h2>
+
+				<p class="text-justify">
+					De acordo com o artigo 3 do decreto nº 24/2018 de 24 de Julho a gestão de património do estado é
+					feita pela inventariação coordenada das Unidades de Supervisão, Intermediarias e Gestoras Executoras
+					do Subsistema do património do estado.
+				</p>
+			</section>
+			<!-- Gestão patrimonial -->
+
+			<!-- Sistema de Admisnistracao patrimonial -->
+			<section>
+				<section>
+					<h4 class="text-left text-info">Sistema de Admisnistracao patrimonial</h4>
+					<p class="text-justify">Atualmente o corpo público de gestão patrimonial usa o <strong>SPE</strong>
+						que esta embutido no <strong>“sistema-mãe” SISTAFE</strong> que é um programa abrangente na
+						medida em que mexe com todas as entidades públicas da esfera económica e financeira do Estado
+						pois todos os órgãos e instituições do Estado, são abrangidas pelo sistema independentemente do
+						regime administrativo e financeiro a que estão sujeitas, e a personalidade jurídica de que
+						dispõem.</p>
+				</section>
+
+				<section>
+					<h4 class="text-left text-info">SISTAFE: SPE</h4>
+					<table class="table table-striped">
+						<tbody>
+							<tr>
+								<td rowspan="5" class="text-left"><strong class="d-inline-block mt-5 pt-5"
+										style="transform: rotate(-90deg)">SISTAFE</strong></td>
+								<td class="text-right">Subsistema do Orçamento Estado</td>
+							</tr>
+							<tr>
+								<td class="text-right">Subsistema da Contabilidade Pública</td>
+							</tr>
+							<tr>
+								<td class="text-right">Subsistema do Tesouro Público</td>
+							</tr>
+							<tr>
+								<td class="text-right text-danger">Subsistema do Património do Estado</td>
+							</tr>
+							<tr>
+								<td class="text-right">Subsistema do Controlo interno</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</section>
+			</section>
+			<!-- Sistema de Admisnistracao patrimonial -->
+
+			<!-- Processo de Gestão patrimonial -->
+			<section>
+				<section>
+					<h3 class="text-info text-left">Processo de Gestão patrimonial</h3>
+					<ol class="float-left">
+						<li class="text-left">Classificação​</li>
+						<li class="text-left">Tombamento</li>
+						<li class="text-left">Cadastro​</li>
+						<li class="text-left">Inventário​</li>
+						<li class="text-left">Movimentação​</li>
+						<li class="text-left">Transferências​</li>
+						<li class="text-left">Abate</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3 class="text-info text-left">Classificação​</h3>
+					<p class="text-justify">Quanto a natureza são classificados como móveis11 e imóveis.<br>
+						Quanto ao tempo de utilização temos património de consumo e património permanente.
+					</p>
+				</section>
+
+				<section>
+					<h3 class="text-info text-left">Tombamento e cadastro</h3>
+					<p class="text-justify">
+						Tombamento é o processo de inclusão (entrada) de um bem permanente no sistema universitário,
+						trata-se do registro e a identificação de móveis e imóveis, bem como de todas as anotações de
+						estoque.
+					</p>
+					<br>
+					<p class="text-justify">
+						O cadastro é o registro de bens que compõem o domínio público do estado, especificando suas
+						características físicas, valor financeiro e localização para posterior avaliação, através do
+						preenchimento da ficha de cadastro.
+					</p>
+				</section>
+
+				<section>
+					<h3 class="text-info text-left">Inventário</h3>
+					<p class="text-justify" style="font-size: 25pt;">
+						<strong>Inicial:</strong> realizado quando da criação de uma unidade gestora, para identificação
+						e registro dos bens sob sua responsabilidade;
+					</p>
+					<br>
+					<p class="text-justify" style="font-size: 25pt;">
+						<strong>Anual:</strong> que é realizado a medida que são adquiridos novos bens pela instituição,
+						e também a fim de manter atualizados os registos dos bens patrimoniais, bem como a
+						responsabilidade dos setores onde se localizam tais bens, mediante verificações físicas.
+					</p>
+					<br>
+					<p class="text-justify" style="font-size: 25pt;">
+						<strong>Geral:</strong> que é feito quinquenalmente, e é neste momento que são acomodados casos
+						de remoção dos bens no sistema.
+					</p>
+				</section>
+
+				<section>
+					<h3 class="text-info text-left">Movimentações e Transferencias</h3>
+					<p class="text-justify" style="font-size: 25pt;">
+						<strong>Movimentação:</strong>
+						consiste na saída de um bem de seu local de guarda para manutenção ou empréstimo, sem a
+						correspondente troca de responsabilidade, sendo emitida a guia de saída.
+					</p>
+					<br>
+					<p class="text-justify" style="font-size: 25pt;">
+						<strong>Transferenia:</strong>
+						constitui a mudança da responsabilidade pela guarda e conservação de um bem permanente
+					</p>
 				</section>
 				<section>
-					<h2>Fragment Styles</h2>
-					<p>There's different types of fragments, like:</p>
-					<p class="fragment grow">grow</p>
-					<p class="fragment shrink">shrink</p>
-					<p class="fragment fade-out">fade-out</p>
-					<p>
-						<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
-						<span style="display: inline-block;" class="fragment fade-up">up, </span>
-						<span style="display: inline-block;" class="fragment fade-down">down, </span>
-						<span style="display: inline-block;" class="fragment fade-left">left</span>
+					<h3 class="text-info text-left">Abate</h3>
+					<p class="text-justify" style="font-size: 25pt;">
+						O abate consiste no ato administrativo de retirar do inventário ou do cadastro de um órgão ou
+						instituição do Estado. Este processo tal como outros é realizado sobre determinadas condições
+						previstas no decreto 42/2018 de 24 de Julho.
 					</p>
-					<p class="fragment fade-in-then-out">fade-in-then-out</p>
-					<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-					<p>Highlight <span class="fragment highlight-red">red</span> <span
-							class="fragment highlight-blue">blue</span> <span
-							class="fragment highlight-green">green</span></p>
 				</section>
 			</section>
+			<!-- Processo de Gestão patrimonial -->
 
-			<section id="transitions">
-				<h2>Transition Styles</h2>
-				<p>
-					You can select from different transitions, like: <br>
-					<a href="?transition=none#/transitions">None</a> -
-					<a href="?transition=fade#/transitions">Fade</a> -
-					<a href="?transition=slide#/transitions">Slide</a> -
-					<a href="?transition=convex#/transitions">Convex</a> -
-					<a href="?transition=concave#/transitions">Concave</a> -
-					<a href="?transition=zoom#/transitions">Zoom</a>
+			<!-- Sistemas Web -->
+			<section data-background="images/web.png" data-background-size="contain" data-background-opacity="0.02">
+				<h4 class="text-left text-info">Sistemas Web</h4>
+				<p class="text-justify" style="font-size: 25pt">
+					Sistemas web são aplicativos ou sistemas de informação projetados para utilização através de
+					navegadores (browsers) usando protocolo HTTP para sua interação.
+				</p>
+
+				<p class="text-justify" style="font-size: 25pt">
+					São desenvolvido para adicionar funcionalidades de negócio para alcançar o objetivo deste
+					determinado negócio, seguindo a tendência de tornar o acesso à informação cada vez mais flexível, e
+					proporcionar usabilidade independente da plataforma.​
+					<br>
+					<br>
+					Nesse contexto as filosofias atuais de desenvolvimento web tendem a seguir essa filosofia colocando
+					sempre que possível os dispositivos móveis em primeiro, uma vez que estes proporcionam maior
+					portabilidade e mobilidade.
 				</p>
 			</section>
+			<!-- Sistemas Web -->
+
+			<!-- Computacao em nuvem -->
+			<section>
+				<section data-background="images/cloud-computing.png" data-background-size="contain"
+					data-background-opacity="0.12">
+					<h4 class="text-left text-info">Computação em nuvem</h4>
+					<p class="text-justify">
+						Paradigma de computação que garante um ambiente de grande escalabilidade, dinâmico e
+						virtualização de recursos como um serviço em demanda. ​
+						<br>
+						<br>
+						O princípio principal objetivo do modelo de computação de nuvem é oferecer computação,
+						armazenamento e software como um serviço ou como uma ferramenta.
+					</p>
+				</section>
+
+				<section data-background="images/cloud-computing.png" data-background-size="contain"
+					data-background-opacity="0.07">
+					<h4 class="text-left text-info">Tendências da computação em nuvem</h4>
+					<table class="table table-hover" style="font-size: 22pt;">
+						<caption class="pt-5">Adaptado de: Canalys Cloud Channels Analysis, Fevereiro de 2019</caption>
+						<thead>
+							<tr>
+								<th scope="col">Produto</th>
+								<th scope="col">S4 2018 Mercado</th>
+								<th scope="col">S4 2017 Mercado</th>
+								<th scope="col">Crescimento anual</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">AWS</th>
+								<td>32.3%</td>
+								<td>32.2%</td>
+								<td>46.3%</td>
+							</tr>
+							<tr>
+								<th scope="row">M. Azure</th>
+								<td>16.5%</td>
+								<td>13.7%</td>
+								<td>75.9%</td>
+							</tr>
+							<tr>
+								<th scope="row">Google Cloud</th>
+								<td>9.5%</td>
+								<td>7.6%</td>
+								<td>81.7%</td>
+							</tr>
+							<tr>
+								<th scope="row">Alibaba Cloud</th>
+								<td>4.2%</td>
+								<td>3.5%</td>
+								<td>73.8%</td>
+							</tr>
+
+							<tr>
+								<th scope="row">IBM Cloud</th>
+								<td>3.6%</td>
+								<td>4.2%</td>
+								<td>27.6%</td>
+							</tr>
+
+							<tr>
+								<th scope="row">Outros</th>
+								<td>33.8%</td>
+								<td>38.9%</td>
+								<td>26.7%</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h4 class="text-left text-info">Tendências da computação em nuvem</h4>
+					<canvas id="marketShare" width="400" height="200"></canvas>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+				</section>
+				<script>
+					var ctx = document.getElementById('marketShare').getContext('2d');
+					var myChart = new Chart(ctx, {
+						type: 'pie',
+						data: {
+							labels: ['AWS', 'AZURE', 'GCE', 'OUTROS'],
+							datasets: [{
+								data: [62, 20, 12, 6],
+								backgroundColor: [
+									'#ff6384',
+									'#36a2eb',
+									'#9966ff',
+									'#4bc0c0'
+								],
+								borderColor: [
+									'rgba(54, 162, 235, 1)',
+									'rgba(255, 206, 86, 1)',
+									'rgba(75, 192, 192, 1)',
+									'rgba(153, 102, 255, 1)'
+								],
+								borderWidth: 1,
+
+							}]
+						},
+						options: {
+							title: {
+								fontSize: 20,
+								display: true,
+								text: 'Mercado Global ate Junho de 2019'
+							},
+							legend: {
+								display: false,
+								position: 'right',
+								maxWidth: 100,
+								onClick: null
+							},
+							tooltips: {
+								titleFontSize: 15,
+								bodyFontSize: 25,
+							}
+						}
+					});
+				</script>
+			</section>
+			<!-- Computacao em nuvem -->
+
+			<!-- Servicoes web -->
+			<section>
+				<section>
+					<h4 class="text-left text-info">Serviços Web</h4>
+					<p class="text-justify">
+						Em um sentido mais generalista um serviço web é uma coleção de padrões e protocolos abertos,
+						usados para troca de dados entra plataformas. ​
+						<br>
+						<br>
+						Um serviço web denota um componente de software armazenado em um host que pode ser acedido via
+						chamada de método por uma aplicação ou por algum outro componente de software em uma outra
+						máquina (computador), por meio de uma rede.​
+					</p>
+				</section>
+
+				<section>
+					<h4 class="text-left text-info">Arquitetura basica de Serviços Web</h4>
+					<img src="images/api.png" height="450px" class="card-img-top border-0" alt="...">
+				</section>
+
+				<section>
+					<h4 class="text-left text-info">Padrões de implementação de Serviços Web</h4>
+					<div class="row">
+						<div class="col-6">
+							<h5 class="text-info">SOAP</h5>
+							<p class="text-justify" style="font-size: 15pt">
+								SOAP (Simple Object Access Protocol)​
+								<br>
+								<br>
+								Este padrão faz a organização dos dados a serem trafegados na estrutura XML o que o
+								torna independente da linguagem e plataforma.
+								<br>
+								<br>
+								Este padrão usa para além do HTTP outros protocolos como SMTP para fazer a troca de
+								mensagens.
+							</p>
+						</div>
+						<div class="col-6 pl-3">
+							<h5 class="text-info">REST</h5>
+							<p class="text-justify" style="font-size: 15pt">
+								REST (Representational State Transfer)​
+								<br>
+								<br>
+								Este padrão de desenvolvimento de serviços web é um pouco mais recente pode fazer a
+								representação dos dados em XML e outros formatos, mas é comummente utilizado a notação
+								JSON (JavaScript Object Notation).
+								<br>
+								<br>
+								O padrão REST determina que os dados resultantes do processamento do servidor possam ser
+								apresentados em uma simples página web.
+							</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<!-- Servicoes web -->
+
+			<!-- Desenvolvimento de sistemas -->
+			<section data-background="images/etapas-modelo-cascata.png" data-background-size="contain"
+				data-background-opacity="0.1">
+				<div class="pt-5 mt-5">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h4 class="text-info text-left">Desenvolvimento do sistema</h4>
+					<h4 class="text-info text-left">E Conceitos Fundamantais</h4>
+				</div>
+			</section>
+			<!-- Desenvolvimento de sistemas -->
+			<!-- Padrão de desenvolvimento -->
+			<section>
+				<section>
+					<h4 class="text-info text-left">Padrão de Desenvolvimento Usado</h4>
+					<img src="images/mvc.png" alt="" class="card-img-top border-0">
+				</section>
+				<section>
+					<h4 class="text-info text-left">Desenvolvimento de sistema usando frameworks</h4>
+					<p class="text-justify" style="font-size: 25pt">
+						Framework são abstrações de software, nesse contexto abstrações são conceitos centrais
+						desprovidos de complexidades e detalhes.
+					</p>
+					<p class="text-justify" style="font-size: 25pt">
+						<br>
+						Atenção que:</p>
+					<p class="text-center">
+
+						<span style="font-size: 30pt">Framework <strong>≠</strong> Bibliotecas</span>
+					</p>
+					<p class="text-justify" style="font-size: 25pt">
+						<br> Frameworks são de grande benefício uma vez que ajudam a concentrar esforços apenas em
+						funcionalidades cruciais e não em conceitos já pensados e desenvolvidos por outros
+						programadores.​
+					</p>
+				</section>
+			</section>
+			<!-- Padrão de desenvolvimento -->
+
+			<!-- Modelo de desenvolvimento -->
+				<section>
+					<section>
+						<h4 class="text-info text-left">Modelo de processo de desenvolvimento</h4>
+						<p class="text-justify" style="font-size: 25pt">
+							<strong>Modelo interativo incremental </strong> é ideal em situações nas quais os requisitos iniciais do software são razoavelmente bem definidos, entretanto, devido a natureza do trabalho de desenvolvimento torna inviável o seu desenvolvimento seguindo os parâmetros do desenvolvimento sequencial
+						</p>
+					</section>
+				</section>
+			<!-- Modelo de desenvolvimento -->
+
+			<!-- UML Diagrams -->
+			<section>
+				<section>
+					<h4 class="text-info text-left">UML</h4>
+					<p class="text-justify" style="font-size: 30pt">
+						Linguagem de modelagem unificada é uma linguagem visual, desenvolvida por Grady Booch, James Rumbaugh e Ivar Jacobson e usada para modelar sistemas orientados a objetos.
+						<br>
+						<br>
+						Esta linguagem auxilia no desenvolvimento do software a definir características e seu funcionamento geral, criando padrões para compreensão genérica do processo.
+
+					</p>
+					<aside class="d-none">
+						É importante dizer que a UML é totalmente independente de qualquer paradigma de programação ou metodologia de desenvolvimento. Esta também possui 15 tipos de diagramas divididos em dois grandes grupos como será mostrado na figura a seguir.
+					</aside>
+
+				</section>
+
+				<section data-background-iframe="uml.html" data-background-interactive>
+					<div style="
+						position: absolute;
+						width: 40%;
+						top: 30rem;
+						right: 0;
+						box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+						background-color: rgba(0, 0, 0, 0.2);
+						color: #fff;
+
+						padding-top: 20px;
+						padding-left: 20px;
+						padding-right: 20px;
+						padding-bottom: 5px;
+
+						font-size: 15px;
+						text-align: left;">
+						<h2 class="text-white">Diagramas da UML</h2>
+					</div>
+				</section>
+			</section>
+			<!-- UML Diagrams -->
+
+			<!-- Requisitos do Sistema -->
+				<section data-background-iframe="requisitos.html" data-background-interactive>
+
+				</section>
+			<!-- Requisitos do Sistema -->
+
+			<!-- Diagrama de distribuição -->
+			<section>
+				<h4 class="text-info text-left">Diagrama de Distribuição</h4>
+			</section>
+			<!-- Diagrama de distribuição -->
+
+			<!-- Diagrama de Casos de uso -->
+				<section>
+					<section>
+						<h4 class="text-info text-left">Diagrama de casos de uso</h4>
+					</section>
+
+					<section>
+						<h4 class="text-info text-left">Diagrama de pacotes para casos de uso</h4>
+					</section>
+
+					<section>
+						<h4 class="text-info text-left">Hierarquia de atores</h4>
+					</section>
+
+					<section>
+						<h4 class="text-info text-left">Subsistema do Usuario</h4>
+					</section>
+					<section>
+						<h4 class="text-info text-left">Subsistema do Administrador Local</h4>
+					</section>
+					<section>
+						<h4 class="text-info text-left">Subsistema do administrador universitário</h4>
+					</section>
+					<section>
+						<h4 class="text-info text-left">Subsistema de gestão de relatórios </h4>
+					</section>
+
+					<section>
+						<h4 class="text-info text-left">Subsistema de acesso externo </h4>
+					</section>
+				</section>
+
+			<!-- Diagrama de Casos de uso -->
+
+			<!-- Diagrama de Classes -->
+				<section>
+					<section>
+						<h4 class="text-info text-left">Diagrama de Classes</h4>
+					</section>
+					<section>
+						<h4 class="text-info text-left">Diagrama de pacotes para Classes</h4>
+					</section>
+
+					<section>
+						<h4 class="text-info text-left">Diagrama de Classes para o pacote dos modelos de património</h4>
+					</section>
+
+					<section>
+						<h4 class="text-info text-left">Diagrama de Classes para o pacote dos modelos de património</h4>
+					</section>
+				</section>
+			<!-- Diagrama de Classes -->
+
+			<!-- Modelo de banco de dados -->
+				<section>
+					<section>
+						<h4 class="text-info text-left">Modelo de banco de dados</h4>
+					</section>
+
+					<section data-background-iframe="images/database/universidade.svg" data-background-interactive>
+						<div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(238, 226, 226, 0.911);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+							<h2 class="text-black">Modelo de organizacao universitaria</h2>
+						</div>
+					</section>
+
+					<section data-background-iframe="images/database/patrimonio-core.svg" data-background-interactive>
+						<div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(238, 226, 226, 0.911);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+							<h2 class="text-black">Modelo Nuclear do patrimônio</h2>
+						</div>
+					</section>
+
+					<section data-background-iframe="images/database/patrimonio-extended.svg" data-background-interactive>
+						<div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(238, 226, 226, 0.911);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+							<h2 class="text-black">Modelo extendido do patrimônio</h2>
+						</div>
+					</section>
+
+					<section data-background-iframe="images/database/patrimonio-extended.svg" data-background-interactive>
+						<div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(238, 226, 226, 0.911);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+							<h2 class="text-black">Modelo de operacoes</h2>
+						</div>
+					</section>
+
+					<section data-background-iframe="images/database/passport.svg" data-background-interactive>
+						<div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(238, 226, 226, 0.911);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+							<h2 class="text-black">Modelo de gestão de requisições externas</h2>
+						</div>
+					</section>
+				</section>
+			<!-- Modelo de banco de dados -->
+
+			<!-- API e seguranca da aplicacao -->
+				<section>
+					<h4 class="text-info text-left">API</h4>
+				</section>
+			<!-- API e seguranca da aplicacao -->
+
+			<!-- API e seguranca da aplicacao -->
+				<section>
+					<h4 class="text-info text-left">Segurança da aplicacao</h4>
+				</section>
+			<!-- API e seguranca da aplicacao -->
+
+			<!-- Performance -->
+				<section>
+					<h4 class="text-info text-left">Performance</h4>
+				</section>
+			<!-- Performance -->
+
+			<!-- Conlusoes -->
+			<section>
+				<section>
+					<h4 class="text-info text-left">Conlusões</h4>
+					<p class="text-justify" style="font-size: 20pt">
+						Após a busca pela revisão bibliográfica verificou-se alguns conceitos relacionados
+						a gestão patrimonial assim como aos sistemas inerentes a esta, o que permitiu o
+						desenvolvimento de um sistema integrado de gestão patrimonial.
+						<br>
+						<br>
+						Tendo em conta o processo atual para gestão de património Unizambeze, no qual
+						demostra que há imenso dispêndio de recursos de vária ordem, desde financeiros ate
+						logísticos, o sistema foi desenvolvido de forma a auxiliar aquilo que são as necessidades
+						de redução de custos que esta área possui na Universidade Zambeze.
+
+						<br>
+						<br>
+						Com o levantamento de requisitos e com a definição das ferramentas a serem
+						utilizadas no desenvolvimento do sistema foi possível fazer o desenho e implementação
+						do protótipo do sistema de acordo com as necessidades da Universidade no que concerne
+						ao processo de gestão de património.
+						<br>
+						<br>
+						Sendo assim com a implementação desse sistema na Universidade Zambeze
+						espera-se prover maior independência na gestão do património.
+					</p>
+				</section>
+
+				<section>
+					<h4 class="text-info text-left">Recomendacoes</h4>
+					<p class="text-justify" style="font-size: 25pt">
+						Face ao possível e previsível risco da não continuidade do sistema e de resistência
+						a mudanças por parte dos usuários recomenda-se que sejam ministradas capacitações para
+						melhorar a interação com o sistema, o que fará com que os envolvidos deem continuidade
+						e se comprometam com as atividades, inclusive buscando melhorias, o que pode ser um
+						ponto fulcral para que este projeto seja replicado em outras instituições, não somente
+						públicas, mas também as privadas.
+						<br>
+						<br>
+						Aos desenvolvedores é recomendável que usem abordagens de desenvolvimento
+						que permitam que seus sistemas se intercomuniquem com outros sistemas de modo a
+						fazer troca de informação, e a garantir também uma maior longevidade a estes.
+					</p>
+				</section>
+
+				<section>
+					<h4 class="text-info text-left">Estudos futuros</h4>
+
+					<p class="text-justify">
+						Tendo em conta que o processo de desenvolvimento é muito longo e seu
+						detalhamento extrapola qualquer fronteira que uma monografia define, sendo assim apos
+						a submissão deste documento pretende-se continuar com o desenvolvimento das
+						funcionalidades cruciais para o sistema operar, assim como desenvolvimento daquilo que
+						é a integração com o SISTAFE, através da geração de planilhas de Excel, ficheiros CSV
+						e outros padrões que o sistema SISTAFE suporte, de modo criar maior comodismo aos
+						seus utilizadores.
+					</p>
+				</section>
+			</section>
+			<!-- Conlusoes -->
+
+			<!-- Demonstracao -->
+				<section>
+					<section>
+						<h4 class="text-info text-left">Demostração</h4>
+					</section>
+
+					<section data-background-iframe="http://127.0.0.1:8001" data-background-interactive>
+					</section>
+				</section>
+			<!-- Demonstracao -->
+
+			<!-- Creditos -->
+				<section>
+					<h4 class="text-info text-left">Creditos</h4>
+					<p>Nomes das pessoas e programass</p>
+				</section>
+			<!-- Creditos -->
 
 			<section id="themes">
-				<h2>Themes</h2>
+				<h2>Alterar tema</h2>
 				<p>
-					reveal.js comes with a few themes built in: <br>
+					<br>
 					<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
 					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black
-						(default)</a> -
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Preto</a>
+					-
 					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a>
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">Branco</a>
 					-
 					<a href="#"
 						onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a>
 					-
 					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a>
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Azul</a>
 					-
 					<a href="#"
 						onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a>
+
 					-
 					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a>
-					<br>
-					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a>
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Vermelho</a>
 					-
 					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a>
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simplicidade</a>
 					-
 					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a>
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Modo
+						noturno</a>
 					-
 					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a>
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Azul
+						2</a>
 					-
 					<a href="#"
-						onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Modo
+						luminoso</a>
 				</p>
-			</section>
-
-			<section>
-				<section data-background="#dddddd">
-					<h2>Slide Backgrounds</h2>
-					<p>
-						Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS
-						color formats are supported.
-					</p>
-					<a href="#" class="navigate-down">
-						<img width="178" height="238"
-							data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-					</a>
-				</section>
-				<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-					<h2>Image Backgrounds</h2>
-					<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
-				</section>
-				<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png"
-					data-background-repeat="repeat" data-background-size="100px">
-					<h2>Tiled Backgrounds</h2>
-					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-				</section>
-				<section
-					data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm"
-					data-background-color="#000000">
-					<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-						<h2>Video Backgrounds</h2>
-						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-					</div>
-				</section>
-				<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-					<h2>... and GIFs!</h2>
-				</section>
-			</section>
-
-			<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-				<h2>Background Transitions</h2>
-				<p>
-					Different background transitions are available via the backgroundTransition option. This one's
-					called "zoom".
-				</p>
-				<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-			</section>
-
-			<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-				<h2>Background Transitions</h2>
-				<p>
-					You can override background transitions per-slide.
-				</p>
-				<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-			</section>
-
-			<section data-background-iframe="http://127.0.0.1:8001" data-background-interactive>
-				<div
-					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-					<h2>Iframe Backgrounds</h2>
-					<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the
-						page in the background.</p>
-				</div>
-			</section>
-
-			<section>
-				<h2>Pretty Code</h2>
-				<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
-import React, { useState } from 'react';
-
-function Example() {
-  const [count, setCount] = useState(0);
-
-  return (
-    &lt;div&gt;
-      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-        Click me
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
-}
-					</code></pre>
-				<p>Code syntax highlighting courtesy of <a
-						href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-			</section>
-
-			<section>
-				<h2>Marvelous List</h2>
-				<ul>
-					<li>No order here</li>
-					<li>Or here</li>
-					<li>Or here</li>
-					<li>Or here</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Fantastic Ordered List</h2>
-				<ol>
-					<li>One is smaller than...</li>
-					<li>Two is smaller than...</li>
-					<li>Three!</li>
-				</ol>
-			</section>
-
-			<section>
-				<h2>Tabular Tables</h2>
-				<table>
-					<thead>
-						<tr>
-							<th>Item</th>
-							<th>Value</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apples</td>
-							<td>$1</td>
-							<td>7</td>
-						</tr>
-						<tr>
-							<td>Lemonade</td>
-							<td>$2</td>
-							<td>18</td>
-						</tr>
-						<tr>
-							<td>Bread</td>
-							<td>$3</td>
-							<td>2</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
-
-			<section>
-				<h2>Clever Quotes</h2>
-				<p>
-					These guys come in two forms, inline: <q
-						cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The
-						nice thing about standards is that there are so many to choose from</q> and block:
-				</p>
-				<blockquote
-					cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-					&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of
-					typewriters would
-					reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-				</blockquote>
-			</section>
-
-			<section>
-				<h2>Intergalactic Interconnections</h2>
-				<p>
-					You can link between slides internally,
-					<a href="#/2/3">like this</a>.
-				</p>
-			</section>
-
-			<section>
-				<h2>Speaker View</h2>
-				<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes
-					a timer, preview of the upcoming slide as well as your speaker notes.</p>
-				<p>Press the <em>S</em> key to try it out.</p>
-
-				<aside class="notes">
-					Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you
-					open the speaker notes window (hit 's' on your keyboard).
-				</aside>
-			</section>
-
-			<section>
-				<h2>Export to PDF</h2>
-				<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>,
-					here's an example:</p>
-				<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355"
-					frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
-					style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-			</section>
-
-			<section>
-				<h2>Global State</h2>
-				<p>
-					Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-					will be added as a class to the document element when the slide is open. This lets you
-					apply broader style changes, like switching the page background.
-				</p>
-			</section>
-
-			<section data-state="customevent">
-				<h2>State Events</h2>
-				<p>
-					Additionally custom events can be triggered on a per slide basis by binding to the
-					<code>data-state</code> name.
-				</p>
-				<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-			</section>
-
-			<section>
-				<h2>Take a Moment</h2>
-				<p>
-					Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and
-					want to take distracting slides off the screen.
-				</p>
-			</section>
-
-			<section>
-				<h2>Much more</h2>
-				<ul>
-					<li>Right-to-left support</li>
-					<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-					<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-					<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-					<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a>
-					</li>
-				</ul>
 			</section>
 
 			<section style="text-align: left;">
-				<h1>THE END</h1>
-				<p>
-					- <a href="https://slides.com">Try the online editor</a> <br>
-					- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-				</p>
+				<h1>Fim</h1>
 			</section>
 
 		</div>
-
 	</div>
 
 
@@ -539,6 +1094,17 @@ Reveal.addEventListener( 'customevent', function() {
 			hash: true,
 
 			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// parallaxBackgroundImage:  "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg",
+
+			// 	// Parallax background size
+			// parallaxBackgroundSize: "2100px 900px" ,
+
+			// // Number of pixels to move the parallax background per slide
+			// // - Calculated automatically unless specified
+			// // - Set to 0 to disable movement along an axis
+			// parallaxBackgroundHorizontal: 200,
+			// parallaxBackgroundVertical: 50,
 
 			// More info https://github.com/hakimel/reveal.js#dependencies
 			dependencies: [

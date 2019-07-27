@@ -1,0 +1,116 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 500px;
+    margin: 0;
+    padding: 50px;
+    color: #000;
+    font: 16px Verdana, sans-serif;
+    background: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#wrapper {
+    position: relative;
+}
+
+.branch {
+    position: relative;
+    margin-left: 250px;
+}
+
+.branch:before {
+    content: "";
+    width: 50px;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    margin-top: 1px;
+}
+
+.branch#comp:before {
+    width: 34px !important;
+    left: -83px !important;
+}
+
+.entry {
+    position: relative;
+    min-height: 60px;
+}
+
+.entry:before {
+    content: "";
+    height: 100%;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    left: -50px;
+}
+
+.entry:after {
+    content: "";
+    width: 50px;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    margin-top: 1px;
+}
+
+.entry:first-child:before {
+    width: 10px;
+    height: 50%;
+    top: 50%;
+    margin-top: 2px;
+    border-radius: 10px 0 0 0;
+}
+
+.entry:first-child:after {
+    height: 10px;
+    border-radius: 10px 0 0 0;
+}
+
+.entry:last-child:before {
+    width: 10px;
+    height: 50%;
+    border-radius: 0 0 0 10px;
+}
+
+.entry:last-child:after {
+    height: 10px;
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0 0 0 10px;
+    margin-top: -9px;
+}
+
+.label {
+    display: block;
+    min-width: 150px;
+    padding: 5px 10px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+}
+
+#wrapper .branch .entry .label:hover,
+#wrapper .branch .entry .label:hover+.branch .entry .label {
+    background: #c8e4f8;
+    color: #000;
+    border: 1px solid #94a0b4;
+}
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
