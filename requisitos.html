@@ -5,8 +5,491 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Requisitos</title>
+    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
+    <script src="plugin/jquery/jquery.min.js"></script>
+	<script src="plugin/popper/popper.min.js"></script>
+	<script src="plugin/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-    Aqui vai aparecer a pagina com os requisitos
+    <style>
+        *{
+            font-size: 25pt;
+        }
+    </style>
+    <div class="container-fluid">
+        <nav>
+            <div class="nav nav-pills nav-justified" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">R. Usuario</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">R. Funcionais</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">R. Não Funcionais</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <table class="table table-sm table-striped">
+                    <tbody>
+                        <tr>
+                            <td >
+                                <p><span >C&oacute;digo</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Modulo</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Descri&ccedil;&atilde;o</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Prioridade</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RU001</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Manter segura a intera&ccedil;&atilde;o com o sistema </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RU002</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Adicionar e gerenciar bens do patrim&oacute;nio.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RU003</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Manter o hist&oacute;rico de um determinado bem desde o tombamento at&eacute; a baixa final.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RU004</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Emitir documentos que referenciam as opera&ccedil;&otilde;es previstas para o patrim&oacute;nio.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RU005</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M03</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Relat&oacute;rios gerenciais</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RU006</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M03</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Relat&oacute;rio e/ou consultas que permitam o acompanhamento, controle e ger&ecirc;ncia da &aacute;rea de Patrim&ocirc;nio.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RU007</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M02</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Integrar a outros sistemas</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <table class="table table-sm table-striped">
+                    <tbody>
+                        <tr>
+                            <td >
+                                <p><span >C&oacute;digo</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Modulo</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Descri&ccedil;&atilde;o</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Prioridade</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF001</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Todo o utilizador deve ser previamente cadastrado</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF002</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Todo utilizador deve estar autenticado</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF003</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Permitir o cadastro de bens no sistema</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF004</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Permitir a gest&atilde;o de transfer&ecirc;ncia e movimenta&ccedil;&otilde;es de bens</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF005</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Permitir a gest&atilde;o de abates de bens</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF006</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M02</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Todas as chamadas aos m&eacute;todos remotos devem ser autenticadas</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF007</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M02</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Permitir chamada a m&eacute;todo remoto para cria&ccedil;&atilde;o de bens</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF008</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M02</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Permitir chamada a m&eacute;todo remoto para busca de informa&ccedil;&otilde;es relativas a um bem</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF009</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M02</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Permitir que opera&ccedil;&otilde;es de transfer&ecirc;ncias e movimenta&ccedil;&otilde;es sejam feitas por chamada de m&eacute;todo remoto</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF010</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M02</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Permitir que a gest&atilde;o de abates possa ser feita por chamada a m&eacute;todo remoto</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF011</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M03</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Emitir relat&oacute;rio de bens agregados e desagregados (Em um per&iacute;odo)</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF012</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M03</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Emitir relat&oacute;rio de bens para inventaria&ccedil;&atilde;o</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF013</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M03</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Emitir relat&oacute;rio de quantitativos</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><span >RF014</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M03</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Emitir relat&oacute;rios de bens financeiros</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <table class="table table-sm table-striped" >
+                    <tbody>
+                        <tr>
+                            <td >
+                                <p><strong><span >C&oacute;digo</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><strong><span >Modulo</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><strong><span >Descri&ccedil;&atilde;o</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><strong><span >Categoria</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><strong><span >Prioridade</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><strong><span >RNF001</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >*</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Todas as a&ccedil;&otilde;es feitas pelo sistema que estejam previstas no Decreto 42/2018 devem ser executadas sem infringi-la</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Aspetos Legais</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><strong><span >RNF002</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >O sistema deve ser independente da plataforma para o usu&aacute;rio</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Portabilidade</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><strong><span >RNF003</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Para aceder a qualquer funcionalidade todo o funcion&aacute;rio deve passar por mecanismos de autentica&ccedil;&atilde;o</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Seguran&ccedil;a</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Essencial</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><strong><span >RNF004</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M02</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >O sistema deve suportar mecanismos de comunica&ccedil;&atilde;o com outros sistemas</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Interoperabilidade</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><strong><span >RNF005</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >O sistema n&atilde;o pode por condi&ccedil;&otilde;es internas levar mais de 1 minuto para responder a um pedido.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Usabilidade</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Desej&aacute;vel</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p><strong><span >RNF006</span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >M01</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >O sistema deve ter uma interface amig&aacute;vel e autodid&aacute;tica</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Usabilidade</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                            <td >
+                                <p><span >Importante</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559731&quot;:709,&quot;335559740&quot;:360}">&nbsp;</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 </body>
 </html>

@@ -29,6 +29,7 @@
 	<script src="plugin/popper/popper.min.js"></script>
 	<script src="plugin/moment/moment.min.js"></script>
 	<script src="plugin/chartjs/Chart.min.js"></script>
+	<script src="plugin/chartjs/utils.js"></script>
 	<!-- Scrips -->
 
 
@@ -60,10 +61,13 @@
 				<p>
 					<small>Autor: <a href="https://samuel-bie.github.io">Samuel Anastácio Bié</a></small>
 				</p>
+				<p>
+					<small>Orientador: Engº. Rui Miguel Inácio</small>
+				</p>
 			</section>
 			<!-- Capa -->
 
-			<!-- Introducao -->
+			<!-- Introdução -->
 			<section>
 				<section>
 					<h2 class="text-left text-info">Introdução</h2>
@@ -85,7 +89,7 @@
 					</p>
 				</section>
 			</section>
-			<!-- Introducao -->
+			<!-- Introdução -->
 
 			<!-- Justificatica -->
 			<section>
@@ -221,7 +225,7 @@
 			</section>
 			<!-- Objectivos -->
 
-			<!-- Delimitacao de pesquisa -->
+			<!-- Delimitação de pesquisa -->
 			<section>
 				<h2 class="text-left text-info">Delimitação de pesquisa</h2>
 				<p class="pt-2 text-justify">
@@ -231,7 +235,7 @@
 					inclusão de novas plataformas para gestão de patrimônio.
 				</p>
 			</section>
-			<!-- Delimitacao de pesquisa -->
+			<!-- Delimitação de pesquisa -->
 
 			<!-- Metodologias: Tecnologias utilizadas -->
 			<section>
@@ -334,10 +338,10 @@
 			</section>
 			<!-- Gestão patrimonial -->
 
-			<!-- Sistema de Admisnistracao patrimonial -->
+			<!-- Sistema de Admisnistração patrimonial -->
 			<section>
 				<section>
-					<h4 class="text-left text-info">Sistema de Admisnistracao patrimonial</h4>
+					<h4 class="text-left text-info">Sistema de Admisnistração patrimonial</h4>
 					<p class="text-justify">Atualmente o corpo público de gestão patrimonial usa o <strong>SPE</strong>
 						que esta embutido no <strong>“sistema-mãe” SISTAFE</strong> que é um programa abrangente na
 						medida em que mexe com todas as entidades públicas da esfera económica e financeira do Estado
@@ -372,7 +376,7 @@
 
 				</section>
 			</section>
-			<!-- Sistema de Admisnistracao patrimonial -->
+			<!-- Sistema de Admisnistração patrimonial -->
 
 			<!-- Processo de Gestão patrimonial -->
 			<section>
@@ -475,7 +479,7 @@
 			</section>
 			<!-- Sistemas Web -->
 
-			<!-- Computacao em nuvem -->
+			<!-- Computação em nuvem -->
 			<section>
 				<section data-background="images/cloud-computing.png" data-background-size="contain"
 					data-background-opacity="0.12">
@@ -557,7 +561,6 @@
 					<br>
 					<br>
 					<br>
-
 				</section>
 				<script>
 					var ctx = document.getElementById('marketShare').getContext('2d');
@@ -603,7 +606,7 @@
 					});
 				</script>
 			</section>
-			<!-- Computacao em nuvem -->
+			<!-- Computação em nuvem -->
 
 			<!-- Servicoes web -->
 			<section>
@@ -759,9 +762,24 @@
 			<!-- UML Diagrams -->
 
 			<!-- Requisitos do Sistema -->
-				<section data-background-iframe="requisitos.html" data-background-interactive>
+				<section>
+					<section>
+						<h4 class="text-info text-left">Requisitos de Usuario, Funcionais, Não Funcionais</h4>
+						<p class="text-justify" style="font-size: 25pt"><strong>Requisitos de usuário </strong>
+							 são declarações, em uma linguagem natural com diagramas, de quais serviços são esperados do sistema e as restrições sob as quais ele deve operar
+						</p>
+						<p class="text-justify" style="font-size: 25pt"><strong>Requisito funcional</strong>
+							 é considerado como todo requisito ou toda a função que o software devera fazer. É necessário entender que uma funcionalidade não necessariamente realizará apenas um requisito funcional.
+						</p>
+						<p class="text-justify" style="font-size: 25pt"><strong>Requisitos Não Funcionais</strong>
+							são restrições sobre os serviços ou as funções oferecidos pelo sistema. Eles incluem restrições de timing, restrições sobre o processo de desenvolvimento e padrões.
+						</p>
+					</section>
 
+					<section data-background-iframe="requisitos.html" data-background-interactive>
+					</section>
 				</section>
+
 			<!-- Requisitos do Sistema -->
 
 			<!-- Diagrama de distribuição -->
@@ -846,7 +864,7 @@
 
 							font-size: 15px;
 							text-align: left;">
-							<h2 class="text-black">Modelo de organizacao universitaria</h2>
+							<h2 class="text-black">Modelo de organização universitaria</h2>
 						</div>
 					</section>
 
@@ -936,22 +954,285 @@
 				</section>
 			<!-- Modelo de banco de dados -->
 
-			<!-- API e seguranca da aplicacao -->
+			<!-- API e seguranca da aplicação -->
 				<section>
-					<h4 class="text-info text-left">API</h4>
-				</section>
-			<!-- API e seguranca da aplicacao -->
+					<h4 class="text-info text-left">Segurança da aplicação</h4>
 
-			<!-- API e seguranca da aplicacao -->
-				<section>
-					<h4 class="text-info text-left">Segurança da aplicacao</h4>
+					<p class="text-justify" style="font-size: 30pt">No que concerne a segurança da aplicação, será aplicada em ambiente de produção uma segurança em 4 camadas</p>
+					<br>
+					<p class="text-justify" style="font-size: 25pt"><strong>TLS/SSL</strong>: Protocolos de segurança da camada de Aplicação(Modelo TCP/IP)</p>
+					<p class="text-justify" style="font-size: 25pt"><strong>Token CSRF(Cross-Site Request Forgery)</strong>: Mecanismo de verificação de entidades emissoras de pedidos HTTP</p>
+					<p class="text-justify" style="font-size: 25pt"><strong>Credenciais</strong>: Email e Password</p>
+					<p class="text-justify" style="font-size: 25pt"><strong>oAuth</strong>: Mecanismo de autenticação de aplicações e gestão de escopos de acesso.</p>
 				</section>
-			<!-- API e seguranca da aplicacao -->
+			<!-- API e seguranca da aplicação -->
 
 			<!-- Performance -->
 				<section>
-					<h4 class="text-info text-left">Performance</h4>
+					<section>
+						<h4 class="text-info text-left">Performance</h4>
+						<p class="text-justify">
+							Um ponto a se tomar em consideração no desenvolvimento de sistemas é a questão
+							do tempo de resposta que sistema dá para as interações com usuário, pois “um sistema
+							lento está fadado a morrer” nesse contexto foram avaliadas os tempos de resposta em
+							ambiente de desenvolvimento local com 3 navegadores destintos (Chrome, Firefox,
+							Chromiun), conexões de rede desde a 2a G até 4G, WIFI.
+						</p>
+					</section>
+
+					<section>
+						<h4 class="text-info text-left">Performance 2G</h4>
+						<canvas id="performance-2g" width="400" height="200"></canvas>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+						<script>
+							var ctx = document.getElementById('performance-2g').getContext('2d');
+							var color = Chart.helpers.color;
+							var myChart = new Chart(ctx, {
+								type: 'radar',
+								data: {
+									labels: ['HTML (1.60KB)', 'JS (1.40KB)', 'CSS (30KB)', 'API (9KB)'],
+									datasets: [
+										{
+											label: 'Firefox',
+											data: [0.084, 288, 0.011, 7.41],
+											backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+											borderColor: window.chartColors.red,
+											pointBackgroundColor: window.chartColors.red,
+											borderWidth: 1,
+										},
+										{
+											label: 'Chrome',
+											data: [0.523, 84,84, 841],
+											backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+											borderColor: window.chartColors.blue,
+											pointBackgroundColor: window.chartColors.blue,
+											borderWidth: 1,
+
+										},{
+											label: 'Chromiun',
+											data: [0.057, 288,0.011, 7.43],
+											backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
+											borderColor: window.chartColors.yellow,
+											pointBackgroundColor: window.chartColors.yellow,
+											borderWidth: 1,
+										}
+
+									]
+								},
+								options: {
+									scale: {
+										ticks: {
+											// beginAtZero: true
+										},
+										pointLabels: {
+											fontSize: 20
+										},
+									},
+									title: {
+										fontSize: 20,
+										display: true,
+										text: 'Estatisticas em base temporal segundos'
+									},
+									legend: {
+										display: true,
+										position: 'right',
+										maxWidth: 100,
+										labels:{
+											fontSize: 20,
+										},
+
+									},
+									tooltips: {
+										titleFontSize: 15,
+										bodyFontSize: 25,
+										callbacks: {
+											label: function(tooltipItem, data) {
+												return data.datasets[tooltipItem.datasetIndex].label + ' : ' + data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+											}
+										}
+									}
+								}
+							});
+						</script>
+					</section>
+
+					<section>
+						<h4 class="text-info text-left">Performance 3G</h4>
+						<canvas id="performance-3g" width="400" height="200"></canvas>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+						<script>
+							var ctx = document.getElementById('performance-3g').getContext('2d');
+							var color = Chart.helpers.color;
+							var myChart = new Chart(ctx, {
+								type: 'radar',
+								data: {
+									labels: ['HTML (1.60KB)', 'JS (1.40KB)', 'CSS (30KB)', 'API (9KB)'],
+									datasets: [
+										{
+											label: 'Firefox',
+											data: [0.58, 0.7, 0.9, 0.73],
+											backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+											borderColor: window.chartColors.red,
+											pointBackgroundColor: window.chartColors.red,
+											borderWidth: 1,
+										},
+										{
+											label: 'Chrome',
+											data: [0.09, 7.15,0.07, 0.17],
+											backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+											borderColor: window.chartColors.blue,
+											pointBackgroundColor: window.chartColors.blue,
+											borderWidth: 1,
+										},{
+											label: 'Chromiun',
+											data: [0.6, 8.5,0.88, 0.69],
+											backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
+											borderColor: window.chartColors.yellow,
+											pointBackgroundColor: window.chartColors.yellow,
+											borderWidth: 1,
+										}
+
+									]
+								},
+								options: {
+									scale: {
+										ticks: {
+											// beginAtZero: true
+										},
+										pointLabels: {
+											fontSize: 20
+										},
+									},
+									title: {
+										fontSize: 20,
+										display: true,
+										text: 'Estatisticas em base temporal segundos'
+									},
+
+									legend: {
+										display: true,
+										position: 'right',
+										maxWidth: 100,
+										labels:{
+											fontSize: 20,
+										},
+									},
+									tooltips: {
+										titleFontSize: 15,
+										bodyFontSize: 25,
+										callbacks: {
+											label: function(tooltipItem, data) {
+												return data.datasets[tooltipItem.datasetIndex].label + ' : ' + data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+											}
+										}
+									}
+								}
+							});
+						</script>
+					</section>
+
+					<section>
+						<h4 class="text-info text-left">Performance 4G & WiFi</h4>
+						<canvas id="performance-4g" width="400" height="200"></canvas>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+
+						<script>
+							var ctx = document.getElementById('performance-4g').getContext('2d');
+							var color = Chart.helpers.color;
+							var myChart = new Chart(ctx, {
+								type: 'radar',
+								data: {
+									labels: ['HTML (1.60KB)', 'JS (1.40KB)', 'CSS (30KB)', 'API (9KB)'],
+									datasets: [
+										{
+											label: 'Firefox',
+											data: [0.04, 0.05, 0.04, 0.1],
+											backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+											borderColor: window.chartColors.red,
+											pointBackgroundColor: window.chartColors.red,
+											borderWidth: 1,
+										},
+										{
+											label: 'Chrome',
+											data: [0.03, 0.01,0.001, 0.10],
+											backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+											borderColor: window.chartColors.blue,
+											pointBackgroundColor: window.chartColors.blue,
+											borderWidth: 1,
+										},{
+											label: 'Chromiun',
+											data: [0.02, 0.037,0.007, 0.10],
+											backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
+											borderColor: window.chartColors.yellow,
+											pointBackgroundColor: window.chartColors.yellow,
+											borderWidth: 1,
+										}
+
+									]
+								},
+								options: {
+									scale: {
+										ticks: {
+											// beginAtZero: true
+										},
+										pointLabels: {
+											fontSize: 20
+										},
+									},
+									title: {
+										fontSize: 20,
+										display: true,
+										text: 'Estatisticas em base temporal segundos'
+									},
+									legend: {
+										display: true,
+										position: 'right',
+										maxWidth: 100,
+										labels:{
+											fontSize: 20,
+										},
+
+									},
+									tooltips: {
+										titleFontSize: 15,
+										bodyFontSize: 25,
+										callbacks: {
+											label: function(tooltipItem, data) {
+												return data.datasets[tooltipItem.datasetIndex].label + ' : ' + data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+											}
+										}
+									}
+								}
+							});
+						</script>
+					</section>
+
+
 				</section>
+
 			<!-- Performance -->
 
 			<!-- Conlusoes -->
@@ -1015,7 +1296,7 @@
 			</section>
 			<!-- Conlusoes -->
 
-			<!-- Demonstracao -->
+			<!-- Demonstração -->
 				<section>
 					<section>
 						<h4 class="text-info text-left">Demostração</h4>
@@ -1024,12 +1305,14 @@
 					<section data-background-iframe="http://127.0.0.1:8001" data-background-interactive>
 					</section>
 				</section>
-			<!-- Demonstracao -->
+			<!-- Demonstração -->
 
 			<!-- Creditos -->
 				<section>
 					<h4 class="text-info text-left">Creditos</h4>
-					<p>Nomes das pessoas e programass</p>
+					<p>Engº. Rui Miguel Inácio</p>
+					<p>Engº. Alcamate Dossa</p>
+					<p>Engº. Ruben Frio</p>
 				</section>
 			<!-- Creditos -->
 

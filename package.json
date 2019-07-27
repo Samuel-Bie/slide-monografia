@@ -1,7 +1,7 @@
 {
-  "name": "reveal.js",
+  "name": "monografia-reveal.js",
   "version": "3.8.0",
-  "description": "The HTML Presentation Framework",
+  "description": "The HTML Presentation of My Monograph, based on reveal.js",
   "homepage": "http://revealjs.com",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
@@ -11,9 +11,9 @@
     "build": "grunt"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Samuel Bie",
+    "email": "samuelbiezinho@gmail.com",
+    "web": "http://samuel-bie.github.io"
   },
   "repository": {
     "type": "git",
