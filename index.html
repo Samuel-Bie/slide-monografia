@@ -498,6 +498,21 @@
 			</section>
 			<!-- UML Diagrams -->
 
+				<!-- Diagrama de distribuição -->
+				<section>
+					<section>
+						<h4 class="text-info text-left">Diagrama de Distribuição</h4>
+						<p class="text-justify">
+							Este diagrama vai ajudar a enteder o mecanismo de funcionamento e acesso a informação, por parte
+							dos utilizadores e dispositivos inetervenientes.
+						</p>
+					</section>
+					<section data-background-iframe="images/diagramas/0001-deployment.svg" data-background-interactive>
+					</section>
+				</section>
+
+				<!-- Diagrama de distribuição -->
+
 			<!-- Diagrama de Casos de uso -->
 			<section>
 					<section>
@@ -704,20 +719,7 @@
 
 			<!-- Requisitos do Sistema -->
 
-			<!-- Diagrama de distribuição -->
-			<section>
-				<section>
-					<h4 class="text-info text-left">Diagrama de Distribuição</h4>
-					<p class="text-justify">
-						Este diagrama vai ajudar a enteder o mecanismo de funcionamento e acesso a informação, por parte
-						dos utilizadores e dispositivos inetervenientes.
-					</p>
-				</section>
-				<section data-background-iframe="images/diagramas/0001-deployment.svg" data-background-interactive>
-				</section>
-			</section>
 
-			<!-- Diagrama de distribuição -->
 
 
 			<!-- Diagrama de Classes -->
@@ -910,19 +912,51 @@
 
 			<!-- API e seguranca da aplicação -->
 			<section>
-				<h4 class="text-info text-left">Segurança da aplicação</h4>
+				<section>
+					<h4 class="text-info text-left">Interconeção de sistemas</h4>
+					<p class="text-justify" style="font-size: 30pt">
+						Baseados nos casos de uso e nos requisitos anteriorimente definidos e para este sistema a API foi desenvolvida de modo a executar essas ações, uma vez que
+						há uma multiplicidade de funcionalidades que consumidores desta podem desejar é
+						alcançar uma visão do usuário da API para entender o que deve ser feito com as
+						bibliotecas da API, por que e como fazê-la.
+					</p>
+				</section>
 
-				<p class="text-justify" style="font-size: 30pt">No que concerne a segurança da aplicação, será aplicada
-					em ambiente de produção uma segurança em 4 camadas</p>
-				<br>
-				<p class="text-justify" style="font-size: 25pt"><strong>TLS/SSL</strong>: Protocolos de segurança da
-					camada de Aplicação(Modelo TCP/IP)</p>
-				<p class="text-justify" style="font-size: 25pt"><strong>Token CSRF(Cross-Site Request Forgery)</strong>:
-					Mecanismo de verificação de entidades emissoras de pedidos HTTP</p>
-				<p class="text-justify" style="font-size: 25pt"><strong>Credenciais</strong>: Email e Password</p>
-				<p class="text-justify" style="font-size: 25pt"><strong>oAuth</strong>: Mecanismo de autenticação de
-					aplicações e gestão de escopos de acesso.</p>
+				<section>
+					<h4 class="text-info text-left">Corpo de uma requisição a API</h4>
+					<img src="images\corpo-da-requisicao-login.png" class="border-0" alt="">
+				</section>
+
+				<section>
+					<h4 class="text-info text-left">Resposta a API</h4>
+					<img src="images\resposta-api.png" class="border-0" alt="">
+				</section>
+
+				<section>
+					<h4 class="text-info text-left">Interconeção ao SISTAFE</h4>
+					<p class="text-justify" style="font-size: 30pt">
+						Para interconectar ao SISTAFE se usará o mecanismo de exportação e importação de dados. Essa mecanismo estará estabelecido via troca de ficheiros em formatos EXCEL, CSV e ou JSON
+					</p>
+					<img src="images\exports.png" class="border-0" alt="">
+				</section>
+
+
+				<section>
+					<h4 class="text-info text-left">Segurança da aplicação</h4>
+
+					<p class="text-justify" style="font-size: 30pt">No que concerne a segurança da aplicação, será aplicada
+						em ambiente de produção uma segurança em 4 camadas</p>
+					<br>
+					<p class="text-justify" style="font-size: 25pt"><strong>TLS/SSL</strong>: Protocolos de segurança da
+						camada de Aplicação(Modelo TCP/IP)</p>
+					<p class="text-justify" style="font-size: 25pt"><strong>Token CSRF(Cross-Site Request Forgery)</strong>:
+						Mecanismo de verificação de entidades emissoras de pedidos HTTP</p>
+					<p class="text-justify" style="font-size: 25pt"><strong>Credenciais</strong>: Email e Password</p>
+					<p class="text-justify" style="font-size: 25pt"><strong>oAuth</strong>: Mecanismo de autenticação de
+						aplicações e gestão de escopos de acesso.</p>
+				</section>
 			</section>
+
 			<!-- API e seguranca da aplicação -->
 
 			<!-- Performance -->
