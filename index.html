@@ -208,89 +208,77 @@
 
 			<!-- Justificatica -->
 			<section>
-				<section>
-					<h2 class="text-left text-info">Justificativa</h2>
-					<canvas id="myChart" width="400" height="200"></canvas>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-				</section>
-				<script>
-					var ctx = document.getElementById('myChart').getContext('2d');
-					var myChart = new Chart(ctx, {
-						type: 'bar',
-						data: {
-							labels: ['2014', '2015', '2016', '2017', '2018'],
-							datasets: [{
-								data: [4826, 6508, 9407, 12813, 12453],
-								backgroundColor: [
-									'#ff6384',
-									'#36a2eb',
-									'#9966ff',
-									'#4bc0c0',
-									'#ffcd56'
-								],
-								borderColor: [
-									'rgba(54, 162, 235, 1)',
-									'rgba(255, 206, 86, 1)',
-									'rgba(75, 192, 192, 1)',
-									'rgba(153, 102, 255, 1)',
-									'rgba(255, 159, 64, 1)'
-								],
-								borderWidth: 1,
+				<h2 class="text-left text-info">Justificativa</h2>
+				<canvas id="myChart" width="400" height="200"></canvas>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			<script>
+				var ctx = document.getElementById('myChart').getContext('2d');
+				var myChart = new Chart(ctx, {
+					type: 'bar',
+					data: {
+						labels: ['2014', '2015', '2016', '2017', '2018'],
+						datasets: [{
+							data: [4826, 6508, 9407, 12813, 12453],
+							backgroundColor: [
+								'#ff6384',
+								'#36a2eb',
+								'#9966ff',
+								'#4bc0c0',
+								'#ffcd56'
+							],
+							borderColor: [
+								'rgba(54, 162, 235, 1)',
+								'rgba(255, 206, 86, 1)',
+								'rgba(75, 192, 192, 1)',
+								'rgba(153, 102, 255, 1)',
+								'rgba(255, 159, 64, 1)'
+							],
+							borderWidth: 1,
 
+						}]
+					},
+					options: {
+						scales: {
+							yAxes: [{
+								ticks: {
+									beginAtZero: true,
+									fontSize: 20
+								}
+							}],
+							xAxes: [{
+								ticks: {
+									beginAtZero: true,
+									fontSize: 20
+								}
 							}]
 						},
-						options: {
-							scales: {
-								yAxes: [{
-									ticks: {
-										beginAtZero: true,
-										fontSize: 20
-									}
-								}],
-								xAxes: [{
-									ticks: {
-										beginAtZero: true,
-										fontSize: 20
-									}
-								}]
-							},
-							title: {
-								fontSize: 20,
-								display: true,
-								text: 'Relatorio de Bens Inventariados'
-							},
-							legend: {
-								display: false,
-								position: 'right',
-								maxWidth: 100,
-								onClick: null
-							},
-							tooltips: {
-								titleFontSize: 15,
-								bodyFontSize: 25,
-							}
+						title: {
+							fontSize: 20,
+							display: true,
+							text: 'Relatorio de Bens Inventariados'
+						},
+						legend: {
+							display: false,
+							position: 'right',
+							maxWidth: 100,
+							onClick: null
+						},
+						tooltips: {
+							titleFontSize: 15,
+							bodyFontSize: 25,
 						}
-					});
-				</script>
+					}
+				});
+			</script>
 
-				<section>
-					<h3 class="text-left text-info">Justificativa</h3>
-					<p class="text-justify">
-						Tomando em análise os relatórios dos bens patrimoniais dos últimos 5 anos, estes mostram que em
-						2014 a Unizambeze contabilizava um total de 4.826 bens móveis permanentes tendo este número
-						crescido cerca para 12.453 bens imoveis em 2018, tendo em conta que nesse período ocorreram para
-						alem do cadastro também movimentações, abates, transferências. Nesse contexto a realização
-						dessas operações sobre esses bens é um aspeto inviável pois a gestão destes atualmente é feita
-						de maneira centralizada.
-					</p>
-				</section>
+
 			</section>
 			<!-- Justificatica -->
 
@@ -926,6 +914,9 @@
 
 				<section>
 					<h4 class="text-info text-left">Corpo de uma requisição a API</h4>
+					<p class="text-info text-justify">Exemplo para requisição de login</p>
+					<p class="text-justify" style="font-size: 25pt">Envia-se uma requisição para a URI: https://dominio/<strong>oauth/login</strong></p>
+
 					<img src="images\corpo-da-requisicao-login.png" class="border-0" alt="">
 				</section>
 
