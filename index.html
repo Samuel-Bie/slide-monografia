@@ -218,65 +218,65 @@
 				<br>
 				<br>
 				<br>
-			<script>
-				var ctx = document.getElementById('myChart').getContext('2d');
-				var myChart = new Chart(ctx, {
-					type: 'bar',
-					data: {
-						labels: ['2014', '2015', '2016', '2017', '2018'],
-						datasets: [{
-							data: [4826, 6508, 9407, 12813, 12453],
-							backgroundColor: [
-								'#ff6384',
-								'#36a2eb',
-								'#9966ff',
-								'#4bc0c0',
-								'#ffcd56'
-							],
-							borderColor: [
-								'rgba(54, 162, 235, 1)',
-								'rgba(255, 206, 86, 1)',
-								'rgba(75, 192, 192, 1)',
-								'rgba(153, 102, 255, 1)',
-								'rgba(255, 159, 64, 1)'
-							],
-							borderWidth: 1,
+				<script>
+					var ctx = document.getElementById('myChart').getContext('2d');
+					var myChart = new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: ['2014', '2015', '2016', '2017', '2018'],
+							datasets: [{
+								data: [4826, 6508, 9407, 12813, 12453],
+								backgroundColor: [
+									'#ff6384',
+									'#36a2eb',
+									'#9966ff',
+									'#4bc0c0',
+									'#ffcd56'
+								],
+								borderColor: [
+									'rgba(54, 162, 235, 1)',
+									'rgba(255, 206, 86, 1)',
+									'rgba(75, 192, 192, 1)',
+									'rgba(153, 102, 255, 1)',
+									'rgba(255, 159, 64, 1)'
+								],
+								borderWidth: 1,
 
-						}]
-					},
-					options: {
-						scales: {
-							yAxes: [{
-								ticks: {
-									beginAtZero: true,
-									fontSize: 20
-								}
-							}],
-							xAxes: [{
-								ticks: {
-									beginAtZero: true,
-									fontSize: 20
-								}
 							}]
 						},
-						title: {
-							fontSize: 20,
-							display: true,
-							text: 'Relatorio de Bens Inventariados'
-						},
-						legend: {
-							display: false,
-							position: 'right',
-							maxWidth: 100,
-							onClick: null
-						},
-						tooltips: {
-							titleFontSize: 15,
-							bodyFontSize: 25,
+						options: {
+							scales: {
+								yAxes: [{
+									ticks: {
+										beginAtZero: true,
+										fontSize: 20
+									}
+								}],
+								xAxes: [{
+									ticks: {
+										beginAtZero: true,
+										fontSize: 20
+									}
+								}]
+							},
+							title: {
+								fontSize: 20,
+								display: true,
+								text: 'Relatorio de Bens Inventariados'
+							},
+							legend: {
+								display: false,
+								position: 'right',
+								maxWidth: 100,
+								onClick: null
+							},
+							tooltips: {
+								titleFontSize: 15,
+								bodyFontSize: 25,
+							}
 						}
-					}
-				});
-			</script>
+					});
+				</script>
 
 
 			</section>
@@ -329,6 +329,24 @@
 
 
 
+
+			<!-- Desenvolvimento de sistemas -->
+			<section data-background="images/etapas-modelo-cascata.png" data-background-size="contain"
+				data-background-opacity="0.1">
+				<div class="pt-5 mt-5">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h4 class="text-info text-left">Desenvolvimento do sistema</h4>
+					<h4 class="text-info text-left">E Conceitos Fundamantais</h4>
+				</div>
+			</section>
+			<!-- Desenvolvimento de sistemas -->
 			<!-- Metodologias: Tecnologias utilizadas -->
 			<section>
 				<h4 class="text-left text-info">Metodologias: Tecnologias utilizadas</h4>
@@ -366,23 +384,6 @@
 			</section>
 			<!-- Metodologias: Tecnologias utilizadas -->
 
-			<!-- Desenvolvimento de sistemas -->
-			<section data-background="images/etapas-modelo-cascata.png" data-background-size="contain"
-				data-background-opacity="0.1">
-				<div class="pt-5 mt-5">
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<h4 class="text-info text-left">Desenvolvimento do sistema</h4>
-					<h4 class="text-info text-left">E Conceitos Fundamantais</h4>
-				</div>
-			</section>
-			<!-- Desenvolvimento de sistemas -->
 
 			<!-- Sistemas Web -->
 			<section>
@@ -488,39 +489,39 @@
 			</section>
 			<!-- UML Diagrams -->
 
-				<!-- Diagrama de distribuição -->
+			<!-- Diagrama de distribuição -->
+			<section>
 				<section>
-					<section>
-						<h4 class="text-info text-left">Diagrama de Distribuição</h4>
-						<p class="text-justify">
-							Este diagrama vai ajudar a enteder o mecanismo de funcionamento e acesso a informação, por parte
-							dos utilizadores e dispositivos inetervenientes.
-						</p>
-					</section>
-					<section data-background-iframe="images/diagramas/0001-deployment.svg" data-background-interactive>
-					</section>
+					<h4 class="text-info text-left">Diagrama de Distribuição</h4>
+					<p class="text-justify">
+						Este diagrama vai ajudar a enteder o mecanismo de funcionamento e acesso a informação, por parte
+						dos utilizadores e dispositivos inetervenientes.
+					</p>
 				</section>
+				<section data-background-iframe="images/diagramas/0001-deployment.svg" data-background-interactive>
+				</section>
+			</section>
 
-				<!-- Diagrama de distribuição -->
+			<!-- Diagrama de distribuição -->
 
 			<!-- Diagrama de Casos de uso -->
 			<section>
-					<section>
-						<h4 class="text-info text-left">Diagrama de casos de uso</h4>
-						<p class="text-justify" style="font-size: 25pt;">
-							Diagramas de casos de uso buscam apresentar o sistema na perspetiva do usuário
-							, demonstrando as funcionalidades (casos de uso) e os serviços oferecidos e quais
-							usuários poderão usar cada funcionalidade.
-							<br><br> Diagramas de casos de uso são usados
-							maioritariamente na modelagem do sistema, durante o levantamento e análise de
-							requisitos, sendo possivelmente alterados a medida que se segue com a engenharia de
-							software, este também serve de base para outros diagramas.
-						</p>
-					</section>
+				<section>
+					<h4 class="text-info text-left">Diagrama de casos de uso</h4>
+					<p class="text-justify" style="font-size: 25pt;">
+						Diagramas de casos de uso buscam apresentar o sistema na perspetiva do usuário
+						, demonstrando as funcionalidades (casos de uso) e os serviços oferecidos e quais
+						usuários poderão usar cada funcionalidade.
+						<br><br> Diagramas de casos de uso são usados
+						maioritariamente na modelagem do sistema, durante o levantamento e análise de
+						requisitos, sendo possivelmente alterados a medida que se segue com a engenharia de
+						software, este também serve de base para outros diagramas.
+					</p>
+				</section>
 
-					<section data-background-iframe="images/diagramas/casos-de-uso/000-pkge.svg"
-						data-background-interactive>
-						<div style="
+				<section data-background-iframe="images/diagramas/casos-de-uso/000-pkge.svg"
+					data-background-interactive>
+					<div style="
 								position: absolute;
 								width: 40%;
 								top: 30rem;
@@ -536,13 +537,13 @@
 
 								font-size: 15px;
 								text-align: left;">
-							<h2 class="text-white">Diagrama de pacotes para casos de uso</h2>
-						</div>
-					</section>
+						<h2 class="text-white">Diagrama de pacotes para casos de uso</h2>
+					</div>
+				</section>
 
-					<section data-background-iframe="images/diagramas/casos-de-uso/000-actors.svg"
-						data-background-interactive>
-						<div style="
+				<section data-background-iframe="images/diagramas/casos-de-uso/000-actors.svg"
+					data-background-interactive>
+					<div style="
 								position: absolute;
 								width: 40%;
 								top: 30rem;
@@ -558,13 +559,13 @@
 
 								font-size: 15px;
 								text-align: left;">
-							<h2 class="text-white">Hierarquia de atores</h2>
-						</div>
-					</section>
+						<h2 class="text-white">Hierarquia de atores</h2>
+					</div>
+				</section>
 
-					<section data-background-iframe="images/diagramas/casos-de-uso/001-user.svg"
-						data-background-interactive>
-						<div style="
+				<section data-background-iframe="images/diagramas/casos-de-uso/001-user.svg"
+					data-background-interactive>
+					<div style="
 								position: absolute;
 								width: 40%;
 								top: 30rem;
@@ -580,13 +581,13 @@
 
 								font-size: 15px;
 								text-align: left;">
-							<h2 class="text-white">Subsistema do Usuario</h2>
-						</div>
-					</section>
+						<h2 class="text-white">Subsistema do Usuario</h2>
+					</div>
+				</section>
 
-					<section data-background-iframe="images/diagramas/casos-de-uso/002-admin-local.svg"
-						data-background-interactive>
-						<div style="
+				<section data-background-iframe="images/diagramas/casos-de-uso/002-admin-local.svg"
+					data-background-interactive>
+					<div style="
 								position: absolute;
 								width: 40%;
 								top: 30rem;
@@ -602,13 +603,13 @@
 
 								font-size: 15px;
 								text-align: left;">
-							<h2 class="text-white">Subsistema do Administrador Local</h2>
-						</div>
-					</section>
+						<h2 class="text-white">Subsistema do Administrador Local</h2>
+					</div>
+				</section>
 
-					<section data-background-iframe="images/diagramas/casos-de-uso/003-admin-universitario.svg"
-						data-background-interactive>
-						<div style="
+				<section data-background-iframe="images/diagramas/casos-de-uso/003-admin-universitario.svg"
+					data-background-interactive>
+					<div style="
 								position: absolute;
 								width: 40%;
 								top: 30rem;
@@ -624,13 +625,13 @@
 
 								font-size: 15px;
 								text-align: left;">
-							<h2 class="text-white">Subsistema do administrador universitário</h2>
-						</div>
-					</section>
+						<h2 class="text-white">Subsistema do administrador universitário</h2>
+					</div>
+				</section>
 
-					<section data-background-iframe="images/diagramas/casos-de-uso/004-relatorios.svg"
-						data-background-interactive>
-						<div style="
+				<section data-background-iframe="images/diagramas/casos-de-uso/004-relatorios.svg"
+					data-background-interactive>
+					<div style="
 								position: absolute;
 								width: 40%;
 								top: 30rem;
@@ -646,13 +647,13 @@
 
 								font-size: 15px;
 								text-align: left;">
-							<h2 class="text-white">Subsistema de gestão de relatórios</h2>
-						</div>
-					</section>
+						<h2 class="text-white">Subsistema de gestão de relatórios</h2>
+					</div>
+				</section>
 
-					<section data-background-iframe="images/diagramas/casos-de-uso/005-external-system.svg"
-						data-background-interactive>
-						<div style="
+				<section data-background-iframe="images/diagramas/casos-de-uso/005-external-system.svg"
+					data-background-interactive>
+					<div style="
 								position: absolute;
 								width: 40%;
 								top: 30rem;
@@ -668,9 +669,9 @@
 
 								font-size: 15px;
 								text-align: left;">
-							<h2 class="text-white">Subsistema de acesso externo</h2>
-						</div>
-					</section>
+						<h2 class="text-white">Subsistema de acesso externo</h2>
+					</div>
+				</section>
 
 			</section>
 
@@ -682,22 +683,23 @@
 					<h4 class="text-info text-left">Classificação​ de requisitos</h4>
 
 					<p class="text-justify">
-						No que tange ao processo de coleta de requisitos este culminou com a classificação dos requisitos da forma disposta na tabela baixo.
+						No que tange ao processo de coleta de requisitos este culminou com a classificação dos
+						requisitos da forma disposta na tabela baixo.
 					</p>
 
 					<table class="table pt-2">
 						<thead>
 							<tr>
-							<th scope="col" style="font-size: 25">Requisitos De Usuário</th>
-							<th scope="col" style="font-size: 25">Requisitos Funcionais</th>
-							<th scope="col" style="font-size: 25">Requisitos Não Funcionais</th>
+								<th scope="col" style="font-size: 25">Requisitos De Usuário</th>
+								<th scope="col" style="font-size: 25">Requisitos Funcionais</th>
+								<th scope="col" style="font-size: 25">Requisitos Não Funcionais</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-							<td>7</td>
-							<td>14</td>
-							<td>6</td>
+								<td>7</td>
+								<td>14</td>
+								<td>6</td>
 							</tr>
 						</tbody>
 					</table>
@@ -905,7 +907,8 @@
 				<section>
 					<h4 class="text-info text-left">Interconeção de sistemas</h4>
 					<p class="text-justify" style="font-size: 30pt">
-						Baseados nos casos de uso e nos requisitos anteriorimente definidos e para este sistema a API foi desenvolvida de modo a executar essas ações, uma vez que
+						Baseados nos casos de uso e nos requisitos anteriorimente definidos e para este sistema a API
+						foi desenvolvida de modo a executar essas ações, uma vez que
 						há uma multiplicidade de funcionalidades que consumidores desta podem desejar é
 						alcançar uma visão do usuário da API para entender o que deve ser feito com as
 						bibliotecas da API, por que e como fazê-la.
@@ -915,7 +918,8 @@
 				<section>
 					<h4 class="text-info text-left">Corpo de uma requisição a API</h4>
 					<p class="text-info text-justify">Exemplo para requisição de login</p>
-					<p class="text-justify" style="font-size: 25pt">Envia-se uma requisição para a URI: https://dominio/<strong>oauth/login</strong></p>
+					<p class="text-justify" style="font-size: 25pt">Envia-se uma requisição para a URI:
+						https://dominio/<strong>oauth/login</strong></p>
 
 					<img src="images\corpo-da-requisicao-login.png" class="border-0" alt="">
 				</section>
@@ -928,7 +932,8 @@
 				<section>
 					<h4 class="text-info text-left">Interconeção ao SISTAFE</h4>
 					<p class="text-justify" style="font-size: 30pt">
-						Para interconectar ao SISTAFE se usará o mecanismo de exportação e importação de dados. Essa mecanismo estará estabelecido via troca de ficheiros em formatos EXCEL, CSV e ou JSON
+						Para interconectar ao SISTAFE se usará o mecanismo de exportação e importação de dados. Essa
+						mecanismo estará estabelecido via troca de ficheiros em formatos EXCEL, CSV e ou JSON
 					</p>
 					<img src="images\exports.png" class="border-0" alt="">
 				</section>
@@ -937,12 +942,14 @@
 				<section>
 					<h4 class="text-info text-left">Segurança da aplicação</h4>
 
-					<p class="text-justify" style="font-size: 30pt">No que concerne a segurança da aplicação, será aplicada
+					<p class="text-justify" style="font-size: 30pt">No que concerne a segurança da aplicação, será
+						aplicada
 						em ambiente de produção uma segurança em 4 camadas</p>
 					<br>
 					<p class="text-justify" style="font-size: 25pt"><strong>TLS/SSL</strong>: Protocolos de segurança da
 						camada de Aplicação(Modelo TCP/IP)</p>
-					<p class="text-justify" style="font-size: 25pt"><strong>Token CSRF(Cross-Site Request Forgery)</strong>:
+					<p class="text-justify" style="font-size: 25pt"><strong>Token CSRF(Cross-Site Request
+							Forgery)</strong>:
 						Mecanismo de verificação de entidades emissoras de pedidos HTTP</p>
 					<p class="text-justify" style="font-size: 25pt"><strong>Credenciais</strong>: Email e Password</p>
 					<p class="text-justify" style="font-size: 25pt"><strong>oAuth</strong>: Mecanismo de autenticação de
