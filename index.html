@@ -1,492 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
 
-    <title>Sistema de gestão patrimonial</title>
+<head>
+  <meta charset="utf-8" />
 
-    <meta
-      name="description"
-      content="A framework for easily creating beautiful presentations using HTML"
-    />
-    <meta name="author" content="Hakim El Hattab" />
+  <title>Sistema de gestão patrimonial</title>
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML" />
+  <meta name="author" content="Hakim El Hattab" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/reveal.css" />
-    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="plugin/chartjs/Chart.min.css" />
-    <link rel="stylesheet" href="css/theme/white.css" id="theme" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/monokai.css" />
-    <!-- CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/reveal.css" />
+  <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="plugin/chartjs/Chart.min.css" />
+  <link rel="stylesheet" href="css/theme/white.css" id="theme" />
 
-    <!-- Scrips -->
-    <script src="plugin/jquery/jquery.min.js"></script>
-    <script src="plugin/popper/popper.min.js"></script>
-    <script src="plugin/moment/moment.min.js"></script>
-    <script src="plugin/chartjs/Chart.min.js"></script>
-    <script src="plugin/chartjs/utils.js"></script>
-    <!-- Scrips -->
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/monokai.css" />
+  <!-- CSS -->
 
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = window.location.search.match(/print-pdf/gi)
-        ? "css/print/pdf.css"
-        : "css/print/paper.css";
-      document.getElementsByTagName("head")[0].appendChild(link);
-    </script>
+  <!-- Scrips -->
+  <script src="plugin/jquery/jquery.min.js"></script>
+  <script src="plugin/popper/popper.min.js"></script>
+  <script src="plugin/moment/moment.min.js"></script>
+  <script src="plugin/chartjs/Chart.min.js"></script>
+  <script src="plugin/chartjs/utils.js"></script>
+  <!-- Scrips -->
 
-    <!--[if lt IE 9]>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = window.location.search.match(/print-pdf/gi)
+      ? "css/print/pdf.css"
+      : "css/print/paper.css";
+    document.getElementsByTagName("head")[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
       <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-    <div class="reveal">
-      <!-- Any section element inside of this container is displayed as a slide -->
-      <div class="slides">
-        <!-- Capa -->
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <!-- Capa -->
+      <section>
+        <h2>Sistema de Gestão patrimoial</h2>
+        <h3>Caso da Universidade Zambeze</h3>
+        <p>
+          <small>Autor:
+            <a href="https://samuel-bie.github.io">Samuel Anastácio Bié</a></small>
+        </p>
+        <p>
+          <small>Orientador: Engº. Rui Miguel Inácio</small>
+        </p>
+      </section>
+      <!-- Capa -->
+
+      <!-- Introdução -->
+      <section>
         <section>
-          <h2>Sistema de Gestão patrimoial</h2>
-          <h3>Caso da Universidade Zambeze</h3>
-          <p>
-            <small
-              >Autor:
-              <a href="https://samuel-bie.github.io"
-                >Samuel Anastácio Bié</a
-              ></small
-            >
-          </p>
-          <p>
-            <small>Orientador: Engº. Rui Miguel Inácio</small>
-          </p>
-        </section>
-        <!-- Capa -->
-
-        <!-- Introdução -->
-        <section>
-          <section>
-            <h2 class="text-left text-info">Introdução</h2>
-            <p class="text-justify">
-              A administração ou gestão patrimonial é uma atividade que está
-              baseada em ações que visam assegurar, por meio de registos e
-              relatórios, a coleta de dados relativos a identificação,
-              existência, quantificação, localização, condições de uso e
-              histórico dos bens patrimoniais, desde a sua primeira inclusão no
-              património, até a sua remoção (baixa final).​
-            </p>
-          </section>
-
-          <section>
-            <h2 class="text-left text-info">Introduçao</h2>
-            <p class="text-justify">
-              Este trabalho trata de um sistema de administração patrimonial a
-              ser implantado na Direção de Construção Administração Patrimonial
-              da Universidade Zambeze para a gestão patrimonial descentralizada
-              no que diz respeito ao controle de bens patrimoniais sob a guarda
-              e responsabilidade desta.
-            </p>
-          </section>
-        </section>
-        <!-- Introdução -->
-
-        <!-- Processo de Gestão patrimonial -->
-        <section>
-          <section>
-            <h3 class="text-info text-left">Processo de Gestão patrimonial</h3>
-            <ol class="float-left">
-              <li class="text-left">Classificação​</li>
-              <li class="text-left">Tombamento</li>
-              <li class="text-left">Cadastro​</li>
-              <li class="text-left">Inventário​</li>
-              <li class="text-left">Movimentação​</li>
-              <li class="text-left">Transferências​</li>
-              <li class="text-left">Abate</li>
-            </ol>
-          </section>
-
-          <section>
-            <h3 class="text-info text-left">Classificação​</h3>
-            <p class="text-justify">
-              Quanto a natureza são classificados como móveis e imóveis.<br />
-              Quanto ao tempo de utilização temos património de consumo e
-              património permanente.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="text-info text-left">Tombamento e cadastro</h3>
-            <p class="text-justify">
-              Tombamento é o processo de inclusão (entrada) de um bem permanente
-              no sistema universitário, trata-se do registro e a identificação
-              de móveis e imóveis, bem como de todas as anotações de estoque.
-            </p>
-            <br />
-            <p class="text-justify">
-              O cadastro é o registro de bens que compõem o domínio público do
-              estado, especificando suas características físicas, valor
-              financeiro e localização para posterior avaliação, através do
-              preenchimento da ficha de cadastro.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="text-info text-left">Inventário</h3>
-            <p class="text-justify" style="font-size: 25pt;">
-              <strong>Inicial:</strong> realizado quando da criação de uma
-              unidade gestora, para identificação e registro dos bens sob sua
-              responsabilidade;
-            </p>
-            <br />
-            <p class="text-justify" style="font-size: 25pt;">
-              <strong>Anual:</strong> que é realizado a medida que são
-              adquiridos novos bens pela instituição, e também a fim de manter
-              atualizados os registos dos bens patrimoniais, bem como a
-              responsabilidade dos setores onde se localizam tais bens, mediante
-              verificações físicas.
-            </p>
-            <br />
-            <p class="text-justify" style="font-size: 25pt;">
-              <strong>Geral:</strong> que é feito quinquenalmente, e é neste
-              momento que são acomodados casos de remoção dos bens no sistema.
-            </p>
-          </section>
-
-          <section>
-            <h3 class="text-info text-left">Movimentações e Transferencias</h3>
-            <p class="text-justify" style="font-size: 25pt;">
-              <strong>Movimentação:</strong>
-              consiste na saída de um bem de seu local de guarda para manutenção
-              ou empréstimo, sem a correspondente troca de responsabilidade,
-              sendo emitida a guia de saída.
-            </p>
-            <br />
-            <p class="text-justify" style="font-size: 25pt;">
-              <strong>Transferenia:</strong>
-              constitui a mudança da responsabilidade pela guarda e conservação
-              de um bem permanente
-            </p>
-          </section>
-          <section>
-            <h3 class="text-info text-left">Abate</h3>
-            <p class="text-justify" style="font-size: 25pt;">
-              O abate consiste no ato administrativo de retirar do inventário ou
-              do cadastro de um órgão ou instituição do Estado. Este processo
-              tal como outros é realizado sobre determinadas condições previstas
-              no decreto 42/2018 de 24 de Julho.
-            </p>
-          </section>
-        </section>
-        <!-- Processo de Gestão patrimonial -->
-
-        <!-- Sistema de Admisnistração patrimonial -->
-        <section>
-          <section>
-            <h4 class="text-left text-info">SISTAFE: SPE</h4>
-            <table class="table table-striped">
-              <tbody>
-                <tr>
-                  <td rowspan="5" class="text-left">
-                    <strong
-                      class="d-inline-block mt-5 pt-5"
-                      style="transform: rotate(-90deg)"
-                      >SISTAFE</strong
-                    >
-                  </td>
-                  <td class="text-right">Subsistema do Orçamento Estado</td>
-                </tr>
-                <tr>
-                  <td class="text-right">
-                    Subsistema da Contabilidade Pública
-                  </td>
-                </tr>
-                <tr>
-                  <td class="text-right">Subsistema do Tesouro Público</td>
-                </tr>
-                <tr>
-                  <td class="text-right text-danger">
-                    Subsistema do Património do Estado
-                  </td>
-                </tr>
-                <tr>
-                  <td class="text-right">Subsistema do Controlo interno</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </section>
-        <!-- Sistema de Admisnistração patrimonial -->
-
-        <!-- Justificatica -->
-        <section>
-          <h2 class="text-left text-info">Justificativa</h2>
-          <canvas id="myChart" width="400" height="200"></canvas>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <script>
-            var ctx = document.getElementById("myChart").getContext("2d");
-            var myChart = new Chart(ctx, {
-              type: "bar",
-              data: {
-                labels: ["2014", "2015", "2016", "2017", "2018"],
-                datasets: [
-                  {
-                    data: [4826, 6508, 9407, 12813, 12453],
-                    backgroundColor: [
-                      "#ff6384",
-                      "#36a2eb",
-                      "#9966ff",
-                      "#4bc0c0",
-                      "#ffcd56"
-                    ],
-                    borderColor: [
-                      "rgba(54, 162, 235, 1)",
-                      "rgba(255, 206, 86, 1)",
-                      "rgba(75, 192, 192, 1)",
-                      "rgba(153, 102, 255, 1)",
-                      "rgba(255, 159, 64, 1)"
-                    ],
-                    borderWidth: 1
-                  }
-                ]
-              },
-              options: {
-                scales: {
-                  yAxes: [
-                    {
-                      ticks: {
-                        beginAtZero: true,
-                        fontSize: 20
-                      }
-                    }
-                  ],
-                  xAxes: [
-                    {
-                      ticks: {
-                        beginAtZero: true,
-                        fontSize: 20
-                      }
-                    }
-                  ]
-                },
-                title: {
-                  fontSize: 20,
-                  display: true,
-                  text: "Relatorio de Bens Inventariados"
-                },
-                legend: {
-                  display: false,
-                  position: "right",
-                  maxWidth: 100,
-                  onClick: null
-                },
-                tooltips: {
-                  titleFontSize: 15,
-                  bodyFontSize: 25
-                }
-              }
-            });
-          </script>
-        </section>
-        <!-- Justificatica -->
-
-        <!-- Problema -->
-        <section>
-          <h2 class="text-left text-info">Problema</h2>
-          <br />
-          <p class="text-justify text-muted">
-            De quais formas o processo de administração patrimonial na
-            Universidade Zambeze pode ser feito de forma descentralizada e
-            independente?
-          </p>
-        </section>
-        <!-- Problema -->
-
-        <!-- Hipoteses -->
-        <section>
-          <h2 class="text-left text-info">Hipótese</h2>
+          <h2 class="text-left text-info">Introdução</h2>
           <p class="text-justify">
-            A implementação de um sistema de informação para gestão patrimonial
-            aberto, pode descentralizar e garantir independência ao
-            gerenciamento do património a nível da Universidade.
+            A administração ou gestão patrimonial é uma atividade que está
+            baseada em ações que visam assegurar, por meio de registos e
+            relatórios, a coleta de dados relativos a identificação,
+            existência, quantificação, localização, condições de uso e
+            histórico dos bens patrimoniais, desde a sua primeira inclusão no
+            património, até a sua remoção (baixa final).​
           </p>
         </section>
-        <!-- Hipoteses -->
 
-        <!-- Objectivos -->
         <section>
-          <section>
-            <h2 class="text-left text-info">Objectivos</h2>
-            <p class="text-left"><strong>Objectivo Geral</strong></p>
-            <p class="text-left pt-2">
-              Propor uma aplicação web de gestão patrimonial.​
-            </p>
-          </section>
-
-          <section>
-            <h2 class="text-left text-info">Objectivos</h2>
-            <p class="text-left"><strong>Objectivos especificos</strong></p>
-            <p class="text-justify pt-1" style="font-size: 27pt">
-              Conhecer a situação atual do processo de administração patrimonial
-              usados atualmente na DCAP UniZambeze;
-            </p>
-            <p class="text-justify pt-1" style="font-size: 27pt">
-              Desenhar conceitualmente e estruturalmente uma plataforma de
-              administração patrimonial descentralizada de um ponto de vista de
-              sistema. ​
-            </p>
-            <p class="text-justify pt-1" style="font-size: 27pt">
-              Desenvolver um protótipo de um sistema de administração
-              patrimonial que possa comunicar-se ao SISTAFE a outros sistemas.
-            </p>
-          </section>
+          <h2 class="text-left text-info">Introduçao</h2>
+          <p class="text-justify">
+            Este trabalho trata de um sistema de administração patrimonial a
+            ser implantado na Direção de Construção Administração Patrimonial
+            da Universidade Zambeze para a gestão patrimonial descentralizada
+            no que diz respeito ao controle de bens patrimoniais sob a guarda
+            e responsabilidade desta.
+          </p>
         </section>
-        <!-- Objectivos -->
+      </section>
+      <!-- Introdução -->
 
-        <!-- Desenvolvimento de sistemas -->
-        <section
-          data-background="images/etapas-modelo-cascata.png"
-          data-background-size="contain"
-          data-background-opacity="0.1"
-        >
-          <div class="pt-5 mt-5">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <h4 class="text-info text-left">Desenvolvimento do sistema</h4>
-            <h4 class="text-info text-left">E Conceitos Fundamentais</h4>
-          </div>
-        </section>
-        <!-- Desenvolvimento de sistemas -->
-        <!-- Metodologias: Tecnologias utilizadas -->
+      <!-- Processo de Gestão patrimonial -->
+      <section>
         <section>
-          <h4 class="text-left text-info">
-            Metodologias: Tecnologias utilizadas
-          </h4>
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col" class="text-left">Lado do cliente</th>
-                <th scope="col" class="text-right">Lado do servidor</th>
-              </tr>
-            </thead>
+          <h3 class="text-info text-left">Processo de Gestão patrimonial</h3>
+          <ol class="float-left">
+            <li class="text-left">Classificação​</li>
+            <li class="text-left">Tombamento</li>
+            <li class="text-left">Cadastro​</li>
+            <li class="text-left">Inventário​</li>
+            <li class="text-left">Movimentação​</li>
+            <li class="text-left">Transferências​</li>
+            <li class="text-left">Abate</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3 class="text-info text-left">Classificação​</h3>
+          <p class="text-justify">
+            Quanto a natureza são classificados como móveis e imóveis.<br />
+            Quanto ao tempo de utilização temos património de consumo e
+            património permanente.
+          </p>
+        </section>
+
+        <section>
+          <h3 class="text-info text-left">Tombamento e cadastro</h3>
+          <p class="text-justify">
+            Tombamento é o processo de inclusão (entrada) de um bem permanente
+            no sistema universitário, trata-se do registro e a identificação
+            de móveis e imóveis, bem como de todas as anotações de estoque.
+          </p>
+          <br />
+          <p class="text-justify">
+            O cadastro é o registro de bens que compõem o domínio público do
+            estado, especificando suas características físicas, valor
+            financeiro e localização para posterior avaliação, através do
+            preenchimento da ficha de cadastro.
+          </p>
+        </section>
+
+        <section>
+          <h3 class="text-info text-left">Inventário</h3>
+          <p class="text-justify" style="font-size: 25pt;">
+            <strong>Inicial:</strong> realizado quando da criação de uma
+            unidade gestora, para identificação e registro dos bens sob sua
+            responsabilidade;
+          </p>
+          <br />
+          <p class="text-justify" style="font-size: 25pt;">
+            <strong>Anual:</strong> que é realizado a medida que são
+            adquiridos novos bens pela instituição, e também a fim de manter
+            atualizados os registos dos bens patrimoniais, bem como a
+            responsabilidade dos setores onde se localizam tais bens, mediante
+            verificações físicas.
+          </p>
+          <br />
+          <p class="text-justify" style="font-size: 25pt;">
+            <strong>Geral:</strong> que é feito quinquenalmente, e é neste
+            momento que são acomodados casos de remoção dos bens no sistema.
+          </p>
+        </section>
+
+        <section>
+          <h3 class="text-info text-left">Movimentações e Transferencias</h3>
+          <p class="text-justify" style="font-size: 25pt;">
+            <strong>Movimentação:</strong>
+            consiste na saída de um bem de seu local de guarda para manutenção
+            ou empréstimo, sem a correspondente troca de responsabilidade,
+            sendo emitida a guia de saída.
+          </p>
+          <br />
+          <p class="text-justify" style="font-size: 25pt;">
+            <strong>Transferenia:</strong>
+            constitui a mudança da responsabilidade pela guarda e conservação
+            de um bem permanente
+          </p>
+        </section>
+        <section>
+          <h3 class="text-info text-left">Abate</h3>
+          <p class="text-justify" style="font-size: 25pt;">
+            O abate consiste no ato administrativo de retirar do inventário ou
+            do cadastro de um órgão ou instituição do Estado. Este processo
+            tal como outros é realizado sobre determinadas condições previstas
+            no decreto 42/2018 de 24 de Julho.
+          </p>
+        </section>
+      </section>
+      <!-- Processo de Gestão patrimonial -->
+
+      <!-- Sistema de Admisnistração patrimonial -->
+      <section>
+        <section>
+          <h4 class="text-left text-info">SISTAFE: SPE</h4>
+          <table class="table table-striped">
             <tbody>
               <tr>
-                <td class="text-left">Vue JS</td>
-                <td class="text-right">Apache 2.0</td>
+                <td rowspan="5" class="text-left">
+                  <strong class="d-inline-block mt-5 pt-5" style="transform: rotate(-90deg)">SISTAFE</strong>
+                </td>
+                <td class="text-right">Subsistema do Orçamento Estado</td>
               </tr>
               <tr>
-                <td class="text-left">HTML</td>
-                <td class="text-right">PHP</td>
+                <td class="text-right">
+                  Subsistema da Contabilidade Pública
+                </td>
               </tr>
               <tr>
-                <td class="text-left">CSS</td>
-                <td class="text-right">MySql</td>
+                <td class="text-right">Subsistema do Tesouro Público</td>
               </tr>
               <tr>
-                <td class="text-left">JavaScript</td>
-                <td class="text-right">Laravel</td>
+                <td class="text-right text-danger">
+                  Subsistema do Património do Estado
+                </td>
               </tr>
               <tr>
-                <td class="text-left"></td>
-                <td class="text-right">REDIS e Memcached</td>
+                <td class="text-right">Subsistema do Controlo interno</td>
               </tr>
             </tbody>
           </table>
         </section>
-        <!-- Metodologias: Tecnologias utilizadas -->
+      </section>
+      <!-- Sistema de Admisnistração patrimonial -->
 
-        <!-- Padrão de desenvolvimento -->
+      <!-- Justificatica -->
+      <section>
+        <h2 class="text-left text-info">Justificativa</h2>
+        <canvas id="myChart" width="400" height="200"></canvas>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <script>
+          var ctx = document.getElementById("myChart").getContext("2d");
+          var myChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: ["2014", "2015", "2016", "2017", "2018"],
+              datasets: [
+                {
+                  data: [4826, 6508, 9407, 12813, 12453],
+                  backgroundColor: [
+                    "#ff6384",
+                    "#36a2eb",
+                    "#9966ff",
+                    "#4bc0c0",
+                    "#ffcd56"
+                  ],
+                  borderColor: [
+                    "rgba(54, 162, 235, 1)",
+                    "rgba(255, 206, 86, 1)",
+                    "rgba(75, 192, 192, 1)",
+                    "rgba(153, 102, 255, 1)",
+                    "rgba(255, 159, 64, 1)"
+                  ],
+                  borderWidth: 1
+                }
+              ]
+            },
+            options: {
+              scales: {
+                yAxes: [
+                  {
+                    ticks: {
+                      beginAtZero: true,
+                      fontSize: 20
+                    }
+                  }
+                ],
+                xAxes: [
+                  {
+                    ticks: {
+                      beginAtZero: true,
+                      fontSize: 20
+                    }
+                  }
+                ]
+              },
+              title: {
+                fontSize: 20,
+                display: true,
+                text: "Relatorio de Bens Inventariados"
+              },
+              legend: {
+                display: false,
+                position: "right",
+                maxWidth: 100,
+                onClick: null
+              },
+              tooltips: {
+                titleFontSize: 15,
+                bodyFontSize: 25
+              }
+            }
+          });
+        </script>
+      </section>
+      <!-- Justificatica -->
+
+      <!-- Problema -->
+      <section>
+        <h2 class="text-left text-info">Problema</h2>
+        <br />
+        <p class="text-justify text-muted">
+          De quais formas o processo de administração patrimonial na
+          Universidade Zambeze pode ser feito de forma descentralizada e
+          independente?
+        </p>
+      </section>
+      <!-- Problema -->
+
+      <!-- Hipoteses -->
+      <section>
+        <h2 class="text-left text-info">Hipótese</h2>
+        <p class="text-justify">
+          A implementação de um sistema de informação para gestão patrimonial
+          aberto, pode descentralizar e garantir independência ao
+          gerenciamento do património a nível da Universidade.
+        </p>
+      </section>
+      <!-- Hipoteses -->
+
+      <!-- Objectivos -->
+      <section>
         <section>
-          <section>
-            <h4 class="text-info text-left">Padrão de Desenvolvimento Usado</h4>
-            <img src="images/mvc.png" alt="" class="card-img-top border-0" />
-          </section>
-          <section>
-            <h4 class="text-info text-left">
-              Desenvolvimento de sistema usando frameworks
-            </h4>
-            <p class="text-justify" style="font-size: 25pt">
-              Framework são abstrações de software, nesse contexto abstrações
-              são conceitos centrais desprovidos de complexidades e detalhes.
-            </p>
-            <p class="text-justify" style="font-size: 25pt">
-              <br />
-              Atenção que:
-            </p>
-            <p class="text-center">
-              <span style="font-size: 30pt"
-                >Framework <strong>≠</strong> Bibliotecas</span
-              >
-            </p>
-            <p class="text-justify" style="font-size: 25pt">
-              <br />
-              Frameworks são de grande benefício uma vez que ajudam a concentrar
-              esforços apenas em funcionalidades cruciais e não em conceitos já
-              pensados e desenvolvidos por outros programadores.​
-            </p>
-          </section>
+          <h2 class="text-left text-info">Objectivos</h2>
+          <p class="text-left"><strong>Objectivo Geral</strong></p>
+          <p class="text-left pt-2">
+            Propor uma aplicação web de gestão patrimonial.​
+          </p>
         </section>
-        <!-- Padrão de desenvolvimento -->
 
-        <!-- Modelo de desenvolvimento -->
         <section>
-          <section>
-            <h4 class="text-info text-left">
-              Modelo de processo de desenvolvimento
-            </h4>
-            <p class="text-justify" style="font-size: 25pt">
-              <strong>Modelo interativo incremental </strong> é ideal em
-              situações nas quais os requisitos iniciais do software são
-              razoavelmente bem definidos, entretanto, devido a natureza do
-              trabalho de desenvolvimento torna inviável o seu desenvolvimento
-              seguindo os parâmetros do desenvolvimento sequencial
-            </p>
-          </section>
+          <h2 class="text-left text-info">Objectivos</h2>
+          <p class="text-left"><strong>Objectivos especificos</strong></p>
+          <p class="text-justify pt-1" style="font-size: 27pt">
+            Conhecer a situação atual do processo de administração patrimonial
+            usados atualmente na DCAP UniZambeze;
+          </p>
+          <p class="text-justify pt-1" style="font-size: 27pt">
+            Desenhar conceitualmente e estruturalmente uma plataforma de
+            administração patrimonial descentralizada de um ponto de vista de
+            sistema. ​
+          </p>
+          <p class="text-justify pt-1" style="font-size: 27pt">
+            Desenvolver um protótipo de um sistema de administração
+            patrimonial que possa comunicar-se ao SISTAFE a outros sistemas.
+          </p>
         </section>
-        <!-- Modelo de desenvolvimento -->
+      </section>
+      <!-- Objectivos -->
 
-        <!-- UML Diagrams -->
+      <!-- Desenvolvimento de sistemas -->
+      <section data-background="images/etapas-modelo-cascata.png" data-background-size="contain"
+        data-background-opacity="0.1">
+        <div class="pt-5 mt-5">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h4 class="text-info text-left">Desenvolvimento do sistema</h4>
+          <h4 class="text-info text-left">E Conceitos Fundamentais</h4>
+        </div>
+      </section>
+      <!-- Desenvolvimento de sistemas -->
+      <!-- Metodologias: Tecnologias utilizadas -->
+      <section>
+        <h4 class="text-left text-info">
+          Metodologias: Tecnologias utilizadas
+        </h4>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col" class="text-left">Lado do cliente</th>
+              <th scope="col" class="text-right">Lado do servidor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-left">Vue JS</td>
+              <td class="text-right">Apache 2.0</td>
+            </tr>
+            <tr>
+              <td class="text-left">HTML</td>
+              <td class="text-right">PHP</td>
+            </tr>
+            <tr>
+              <td class="text-left">CSS</td>
+              <td class="text-right">MySql</td>
+            </tr>
+            <tr>
+              <td class="text-left">JavaScript</td>
+              <td class="text-right">Laravel</td>
+            </tr>
+            <tr>
+              <td class="text-left"></td>
+              <td class="text-right">REDIS e Memcached</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Metodologias: Tecnologias utilizadas -->
+
+      <!-- Padrão de desenvolvimento -->
+      <section>
         <section>
-          <section>
-            <h4 class="text-info text-left">UML</h4>
-            <p class="text-justify">
-              Linguagem de modelagem unificada é uma linguagem visual foi
-              utilizada para auxiliar no desenvolvimento do software a definir
-              características e seu funcionamento geral, criando padrões para
-              compreensão genérica do processo.
-            </p>
-          </section>
+          <h4 class="text-info text-left">Padrão de Desenvolvimento Usado</h4>
+          <img src="images/mvc.png" alt="" class="card-img-top border-0" />
+        </section>
+        <section>
+          <h4 class="text-info text-left">
+            Desenvolvimento de sistema usando frameworks
+          </h4>
+          <p class="text-justify" style="font-size: 25pt">
+            Framework são abstrações de software, nesse contexto abstrações
+            são conceitos centrais desprovidos de complexidades e detalhes.
+          </p>
+          <p class="text-justify" style="font-size: 25pt">
+            <br />
+            Atenção que:
+          </p>
+          <p class="text-center">
+            <span style="font-size: 30pt">Framework <strong>≠</strong> Bibliotecas</span>
+          </p>
+          <p class="text-justify" style="font-size: 25pt">
+            <br />
+            Frameworks são de grande benefício uma vez que ajudam a concentrar
+            esforços apenas em funcionalidades cruciais e não em conceitos já
+            pensados e desenvolvidos por outros programadores.​
+          </p>
+        </section>
+      </section>
+      <!-- Padrão de desenvolvimento -->
 
-          <section
-            data-background-iframe="uml.html"
-            data-background-interactive
-          >
-            <div
-              style="
+      <!-- Modelo de desenvolvimento -->
+      <section>
+        <section>
+          <h4 class="text-info text-left">
+            Modelo de processo de desenvolvimento
+          </h4>
+          <p class="text-justify" style="font-size: 25pt">
+            <strong>Modelo interativo incremental </strong> é ideal em
+            situações nas quais os requisitos iniciais do software são
+            razoavelmente bem definidos, entretanto, devido a natureza do
+            trabalho de desenvolvimento torna inviável o seu desenvolvimento
+            seguindo os parâmetros do desenvolvimento sequencial
+          </p>
+        </section>
+      </section>
+      <!-- Modelo de desenvolvimento -->
+
+      <!-- UML Diagrams -->
+      <section>
+        <section>
+          <h4 class="text-info text-left">UML</h4>
+          <p class="text-justify">
+            Linguagem de modelagem unificada é uma linguagem visual foi
+            utilizada para auxiliar no desenvolvimento do software a definir
+            características e seu funcionamento geral, criando padrões para
+            compreensão genérica do processo.
+          </p>
+        </section>
+
+        <section data-background-iframe="uml.html" data-background-interactive>
+          <div style="
 						position: absolute;
 						width: 40%;
 						top: 30rem;
@@ -501,1145 +479,1021 @@
 						padding-bottom: 5px;
 
 						font-size: 15px;
-						text-align: left;"
-            >
-              <h2 class="text-white">Diagramas da UML</h2>
-            </div>
-          </section>
+						text-align: left;">
+            <h2 class="text-white">Diagramas da UML</h2>
+          </div>
         </section>
-        <!-- UML Diagrams -->
+      </section>
+      <!-- UML Diagrams -->
 
-        <!-- Diagrama de distribuição -->
+      <!-- Diagrama de distribuição -->
+      <section>
         <section>
-          <section>
-            <h4 class="text-info text-left">Diagrama de Distribuição</h4>
-            <p class="text-justify">
-              Este diagrama vai ajudar a enteder o mecanismo de funcionamento e
-              acesso a informação, por parte dos utilizadores e dispositivos
-              inetervenientes.
-            </p>
-          </section>
-          <section
-            data-background-iframe="images/diagramas/0001-deployment.svg"
-            data-background-interactive
-          ></section>
+          <h4 class="text-info text-left">Diagrama de Distribuição</h4>
+          <p class="text-justify">
+            Este diagrama vai ajudar a enteder o mecanismo de funcionamento e
+            acesso a informação, por parte dos utilizadores e dispositivos
+            inetervenientes.
+          </p>
         </section>
+        <section data-background-iframe="images/diagramas/0001-deployment.svg" data-background-interactive></section>
+      </section>
 
-        <!-- Diagrama de distribuição -->
+      <!-- Diagrama de distribuição -->
 
-        <!-- Diagrama de Casos de uso -->
+      <!-- Diagrama de Casos de uso -->
+      <section>
         <section>
-          <section>
-            <h4 class="text-info text-left">Diagrama de casos de uso</h4>
-            <p class="text-justify" style="font-size: 25pt;">
-              Diagramas de casos de uso buscam apresentar o sistema na
-              perspetiva do usuário , demonstrando as funcionalidades (casos de
-              uso) e os serviços oferecidos e quais usuários poderão usar cada
-              funcionalidade.
-              <br /><br />
-              Diagramas de casos de uso são usados maioritariamente na modelagem
-              do sistema, durante o levantamento e análise de requisitos, sendo
-              possivelmente alterados a medida que se segue com a engenharia de
-              software, este também serve de base para outros diagramas.
-            </p>
-          </section>
-
-          <section
-            data-background-iframe="images/diagramas/casos-de-uso/000-pkge.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-								position: absolute;
-								width: 40%;
-								top: 30rem;
-								right: 0;
-								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-								background-color: rgba(0, 0, 0, 0.2);
-								color: #fff;
-
-								padding-top: 20px;
-								padding-left: 20px;
-								padding-right: 20px;
-								padding-bottom: 5px;
-
-								font-size: 15px;
-								text-align: left;"
-            >
-              <h2 class="text-white">Diagrama de pacotes para casos de uso</h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/diagramas/casos-de-uso/000-actors.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-								position: absolute;
-								width: 40%;
-								top: 30rem;
-								right: 0;
-								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-								background-color: rgba(0, 0, 0, 0.2);
-								color: #fff;
-
-								padding-top: 20px;
-								padding-left: 20px;
-								padding-right: 20px;
-								padding-bottom: 5px;
-
-								font-size: 15px;
-								text-align: left;"
-            >
-              <h2 class="text-white">Hierarquia de atores</h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/diagramas/casos-de-uso/001-user.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-								position: absolute;
-								width: 40%;
-								top: 30rem;
-								right: 0;
-								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-								background-color: rgba(0, 0, 0, 0.2);
-								color: #fff;
-
-								padding-top: 20px;
-								padding-left: 20px;
-								padding-right: 20px;
-								padding-bottom: 5px;
-
-								font-size: 15px;
-								text-align: left;"
-            >
-              <h2 class="text-white">Subsistema do Usuario</h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/diagramas/casos-de-uso/002-admin-local.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-								position: absolute;
-								width: 40%;
-								top: 30rem;
-								right: 0;
-								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-								background-color: rgba(0, 0, 0, 0.2);
-								color: #fff;
-
-								padding-top: 20px;
-								padding-left: 20px;
-								padding-right: 20px;
-								padding-bottom: 5px;
-
-								font-size: 15px;
-								text-align: left;"
-            >
-              <h2 class="text-white">Subsistema do Administrador Local</h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/diagramas/casos-de-uso/003-admin-universitario.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-								position: absolute;
-								width: 40%;
-								top: 30rem;
-								right: 0;
-								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-								background-color: rgba(0, 0, 0, 0.2);
-								color: #fff;
-
-								padding-top: 20px;
-								padding-left: 20px;
-								padding-right: 20px;
-								padding-bottom: 5px;
-
-								font-size: 15px;
-								text-align: left;"
-            >
-              <h2 class="text-white">
-                Subsistema do administrador universitário
-              </h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/diagramas/casos-de-uso/004-relatorios.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-								position: absolute;
-								width: 40%;
-								top: 30rem;
-								right: 0;
-								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-								background-color: rgba(0, 0, 0, 0.2);
-								color: #fff;
-
-								padding-top: 20px;
-								padding-left: 20px;
-								padding-right: 20px;
-								padding-bottom: 5px;
-
-								font-size: 15px;
-								text-align: left;"
-            >
-              <h2 class="text-white">Subsistema de gestão de relatórios</h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/diagramas/casos-de-uso/005-external-system.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-								position: absolute;
-								width: 40%;
-								top: 30rem;
-								right: 0;
-								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-								background-color: rgba(0, 0, 0, 0.2);
-								color: #fff;
-
-								padding-top: 20px;
-								padding-left: 20px;
-								padding-right: 20px;
-								padding-bottom: 5px;
-
-								font-size: 15px;
-								text-align: left;"
-            >
-              <h2 class="text-white">Subsistema de acesso externo</h2>
-            </div>
-          </section>
-        </section>
-
-        <!-- Diagrama de Casos de uso -->
-
-        <!-- Requisitos do Sistema -->
-        <section>
-          <section>
-            <h4 class="text-info text-left">Classificação​ de requisitos</h4>
-
-            <p class="text-justify">
-              No que tange ao processo de coleta de requisitos este culminou com
-              a classificação dos requisitos da forma disposta na tabela baixo.
-            </p>
-
-            <table class="table pt-2">
-              <thead>
-                <tr>
-                  <th scope="col" style="font-size: 25">
-                    Requisitos De Usuário
-                  </th>
-                  <th scope="col" style="font-size: 25">
-                    Requisitos Funcionais
-                  </th>
-                  <th scope="col" style="font-size: 25">
-                    Requisitos Não Funcionais
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>7</td>
-                  <td>14</td>
-                  <td>6</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section
-            data-background-iframe="requisitos.html"
-            data-background-interactive
-          ></section>
-        </section>
-
-        <!-- Requisitos do Sistema -->
-
-        <!-- Diagrama de Classes -->
-        <section>
-          <section>
-            <h4 class="text-info text-left">Diagrama de Classes</h4>
-          </section>
-
-          <section
-            data-background-iframe="images/diagramas/classes/000-pkg-use-case.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-							position: absolute;
-							width: 40%;
-							top: 30rem;
-							right: 0;
-							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-							background-color: rgba(0, 0, 0, 0.2);
-							color: #fff;
-
-							padding-top: 20px;
-							padding-left: 20px;
-							padding-right: 20px;
-							padding-bottom: 5px;
-
-							font-size: 15px;
-							text-align: left;"
-            >
-              <h2 class="text-white">Diagrama de pacotes para Classes</h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/diagramas/classes/001-patrimonio.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-							position: absolute;
-							width: 40%;
-							top: 30rem;
-							right: 0;
-							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-							background-color: rgba(0, 0, 0, 0.2);
-							color: #fff;
-
-							padding-top: 20px;
-							padding-left: 20px;
-							padding-right: 20px;
-							padding-bottom: 5px;
-
-							font-size: 15px;
-							text-align: left;"
-            >
-              <h2 class="text-white">
-                Diagrama de Classes para o pacote dos modelos de património
-              </h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/diagramas/classes/002-universidade.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-							position: absolute;
-							width: 40%;
-							top: 30rem;
-							right: 0;
-							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-							background-color: rgba(0, 0, 0, 0.2);
-							color: #fff;
-
-							padding-top: 20px;
-							padding-left: 20px;
-							padding-right: 20px;
-							padding-bottom: 5px;
-
-							font-size: 15px;
-							text-align: left;"
-            >
-              <h2 class="text-white">
-                Diagrama de Classes para o pacote dos modelos da universidade
-              </h2>
-            </div>
-          </section>
-        </section>
-        <!-- Diagrama de Classes -->
-
-        <!-- Modelo de banco de dados -->
-        <section>
-          <section>
-            <h4 class="text-info text-left">Modelo de banco de dados</h4>
-          </section>
-
-          <section
-            data-background-iframe="images/database/universidade.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-							position: absolute;
-							width: 40%;
-							top: 30rem;
-							right: 0;
-							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-							background-color: rgba(238, 226, 226, 0.911);
-							color: #fff;
-
-							padding-top: 20px;
-							padding-left: 20px;
-							padding-right: 20px;
-							padding-bottom: 5px;
-
-							font-size: 15px;
-							text-align: left;"
-            >
-              <h2 class="text-black">Modelo de organização universitaria</h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/database/patrimonio-core.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-							position: absolute;
-							width: 40%;
-							top: 30rem;
-							right: 0;
-							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-							background-color: rgba(238, 226, 226, 0.911);
-							color: #fff;
-
-							padding-top: 20px;
-							padding-left: 20px;
-							padding-right: 20px;
-							padding-bottom: 5px;
-
-							font-size: 15px;
-							text-align: left;"
-            >
-              <h2 class="text-black">Modelo Nuclear do patrimônio</h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/database/patrimonio-extended.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-							position: absolute;
-							width: 40%;
-							top: 30rem;
-							right: 0;
-							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-							background-color: rgba(238, 226, 226, 0.911);
-							color: #fff;
-
-							padding-top: 20px;
-							padding-left: 20px;
-							padding-right: 20px;
-							padding-bottom: 5px;
-
-							font-size: 15px;
-							text-align: left;"
-            >
-              <h2 class="text-black">Modelo extendido do patrimônio</h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/database/patrimonio-extended.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-							position: absolute;
-							width: 40%;
-							top: 30rem;
-							right: 0;
-							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-							background-color: rgba(238, 226, 226, 0.911);
-							color: #fff;
-
-							padding-top: 20px;
-							padding-left: 20px;
-							padding-right: 20px;
-							padding-bottom: 5px;
-
-							font-size: 15px;
-							text-align: left;"
-            >
-              <h2 class="text-black">Modelo de operacoes</h2>
-            </div>
-          </section>
-
-          <section
-            data-background-iframe="images/database/passport.svg"
-            data-background-interactive
-          >
-            <div
-              style="
-							position: absolute;
-							width: 40%;
-							top: 30rem;
-							right: 0;
-							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
-							background-color: rgba(238, 226, 226, 0.911);
-							color: #fff;
-
-							padding-top: 20px;
-							padding-left: 20px;
-							padding-right: 20px;
-							padding-bottom: 5px;
-
-							font-size: 15px;
-							text-align: left;"
-            >
-              <h2 class="text-black">
-                Modelo de gestão de requisições externas
-              </h2>
-            </div>
-          </section>
-        </section>
-        <!-- Modelo de banco de dados -->
-
-        <!-- API e seguranca da aplicação -->
-        <section>
-          <section>
-            <h4 class="text-info text-left">Interconeção de sistemas</h4>
-            <p class="text-justify" style="font-size: 30pt">
-              Baseados nos casos de uso e nos requisitos anteriorimente
-              definidos e para este sistema a API foi desenvolvida de modo a
-              executar essas ações, uma vez que há uma multiplicidade de
-              funcionalidades que consumidores desta podem desejar é alcançar
-              uma visão do usuário da API para entender o que deve ser feito com
-              as bibliotecas da API, por que e como fazê-la.
-            </p>
-          </section>
-          <!-- Sistemas Web -->
-          <section
-            data-background="images/web.png"
-            data-background-size="contain"
-            data-background-opacity="0.02"
-          >
-            <h4 class="text-left text-info">API ouServiços web</h4>
-            <p class="text-justify" style="font-size: 27pt">
-              Em um sentido mais generalista um <strong>serviço web</strong> é
-              uma coleção de padrões e protocolos abertos, usados para troca de
-              dados entra plataformas, ou seja, que pode ser acedido via chamada
-              de método por uma aplicação ou por algum outro componente de
-              software por meio de uma rede. ​
-              <br />
-              Esses recursos são maioritariamente implementados usando os
-              padroes SOAP e REST
-            </p>
-          </section>
-
-          <section>
-            <h4 class="text-left text-info">
-              Arquitetura basica de Serviços Web
-            </h4>
-            <img
-              src="images/api.png"
-              height="450px"
-              class="card-img-top border-0"
-              alt="..."
-            />
-          </section>
-          <!-- Sistemas Web -->
-
-          <section>
-            <h4 class="text-info text-left">Corpo de uma requisição a API</h4>
-            <p class="text-info text-justify">
-              Exemplo para requisição de login
-            </p>
-            <p class="text-justify" style="font-size: 25pt">
-              Envia-se uma requisição para a URI: https://dominio/<strong
-                >oauth/login</strong
-              >
-            </p>
-
-            <img
-              src="images\corpo-da-requisicao-login.png"
-              class="border-0"
-              alt=""
-            />
-          </section>
-
-          <section>
-            <h4 class="text-info text-left">Resposta a API</h4>
-            <img src="images\resposta-api.png" class="border-0" alt="" />
-          </section>
-
-          <section>
-            <h4 class="text-info text-left">Interconeção ao SISTAFE</h4>
-            <p class="text-justify" style="font-size: 30pt">
-              Para interconectar ao SISTAFE se usará o mecanismo de exportação e
-              importação de dados. Essa mecanismo estará estabelecido via troca
-              de ficheiros em formatos EXCEL, CSV e ou JSON
-            </p>
-            <img src="images\exports.png" class="border-0" alt="" />
-          </section>
-
-          <section>
-            <h4 class="text-info text-left">Segurança da aplicação</h4>
-
-            <p class="text-justify mb-5 pb-3" style="font-size: 27pt">
-              No que concerne a segurança da aplicação, será aplicada em
-              ambiente de produção uma segurança em 5 camadas
-            </p>
-            <p class="text-justify" style="font-size: 25pt">
-              <strong>CDN</strong>: Redes de Distribuição de conteudo.
-            </p>
-
-            <p class="text-justify" style="font-size: 25pt">
-              <strong>TLS/SSL</strong>: Protocolos de segurança da camada de
-              Aplicação(Modelo TCP/IP)
-            </p>
-            <p class="text-justify" style="font-size: 25pt">
-              <strong>Token CSRF(Cross-Site Request Forgery)</strong>: Mecanismo
-              de verificação de entidades emissoras de pedidos HTTP
-            </p>
-            <p class="text-justify" style="font-size: 25pt">
-              <strong>Credenciais</strong>: Email e Password
-            </p>
-            <p class="text-justify" style="font-size: 25pt">
-              <strong>oAuth</strong>: Mecanismo de autenticação de aplicações e
-              gestão de escopos de acesso.
-            </p>
-          </section>
-        </section>
-
-        <!-- API e seguranca da aplicação -->
-
-        <!-- Performance -->
-        <section>
-          <section>
-            <h4 class="text-info text-left">Performance</h4>
-            <p class="text-justify">
-              Um ponto a se tomar em consideração no desenvolvimento de sistemas
-              é a questão do tempo de resposta que sistema dá para as interações
-              com usuário, pois “um sistema lento está fadado a morrer” nesse
-              contexto foram avaliadas os tempos de resposta em ambiente de
-              desenvolvimento local com 3 navegadores destintos (Chrome,
-              Firefox, Chromiun), conexões de rede desde a 2G até 4G/WIFI.
-            </p>
-          </section>
-
-          <section>
-            <h4 class="text-info text-left">Performance 2G</h4>
-            <canvas id="performance-2g" width="400" height="200"></canvas>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <script>
-              var ctx = document
-                .getElementById("performance-2g")
-                .getContext("2d");
-              var color = Chart.helpers.color;
-              var myChart = new Chart(ctx, {
-                type: "radar",
-                data: {
-                  labels: [
-                    "HTML (1.60KB)",
-                    "JS (1.40KB)",
-                    "CSS (30KB)",
-                    "API (9KB)"
-                  ],
-                  datasets: [
-                    {
-                      label: "Firefox",
-                      data: [0.084, 288, 0.011, 7.41],
-                      backgroundColor: color(window.chartColors.red)
-                        .alpha(0.2)
-                        .rgbString(),
-                      borderColor: window.chartColors.red,
-                      pointBackgroundColor: window.chartColors.red,
-                      borderWidth: 1
-                    },
-                    {
-                      label: "Chrome",
-                      data: [0.523, 84, 84, 841],
-                      backgroundColor: color(window.chartColors.blue)
-                        .alpha(0.2)
-                        .rgbString(),
-                      borderColor: window.chartColors.blue,
-                      pointBackgroundColor: window.chartColors.blue,
-                      borderWidth: 1
-                    },
-                    {
-                      label: "Chromiun",
-                      data: [0.057, 288, 0.011, 7.43],
-                      backgroundColor: color(window.chartColors.yellow)
-                        .alpha(0.2)
-                        .rgbString(),
-                      borderColor: window.chartColors.yellow,
-                      pointBackgroundColor: window.chartColors.yellow,
-                      borderWidth: 1
-                    }
-                  ]
-                },
-                options: {
-                  scale: {
-                    ticks: {
-                      // beginAtZero: true
-                    },
-                    pointLabels: {
-                      fontSize: 20
-                    }
-                  },
-                  title: {
-                    fontSize: 20,
-                    display: true,
-                    text: "Estatisticas em base temporal segundos"
-                  },
-                  legend: {
-                    display: true,
-                    position: "right",
-                    maxWidth: 100,
-                    labels: {
-                      fontSize: 20
-                    }
-                  },
-                  tooltips: {
-                    titleFontSize: 15,
-                    bodyFontSize: 25,
-                    callbacks: {
-                      label: function(tooltipItem, data) {
-                        return (
-                          data.datasets[tooltipItem.datasetIndex].label +
-                          " : " +
-                          data.datasets[tooltipItem.datasetIndex].data[
-                            tooltipItem.index
-                          ]
-                        );
-                      }
-                    }
-                  }
-                }
-              });
-            </script>
-          </section>
-
-          <section>
-            <h4 class="text-info text-left">Performance 3G</h4>
-            <canvas id="performance-3g" width="400" height="200"></canvas>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <script>
-              var ctx = document
-                .getElementById("performance-3g")
-                .getContext("2d");
-              var color = Chart.helpers.color;
-              var myChart = new Chart(ctx, {
-                type: "radar",
-                data: {
-                  labels: [
-                    "HTML (1.60KB)",
-                    "JS (1.40KB)",
-                    "CSS (30KB)",
-                    "API (9KB)"
-                  ],
-                  datasets: [
-                    {
-                      label: "Firefox",
-                      data: [0.58, 0.7, 0.9, 0.73],
-                      backgroundColor: color(window.chartColors.red)
-                        .alpha(0.2)
-                        .rgbString(),
-                      borderColor: window.chartColors.red,
-                      pointBackgroundColor: window.chartColors.red,
-                      borderWidth: 1
-                    },
-                    {
-                      label: "Chrome",
-                      data: [0.09, 7.15, 0.07, 0.17],
-                      backgroundColor: color(window.chartColors.blue)
-                        .alpha(0.2)
-                        .rgbString(),
-                      borderColor: window.chartColors.blue,
-                      pointBackgroundColor: window.chartColors.blue,
-                      borderWidth: 1
-                    },
-                    {
-                      label: "Chromiun",
-                      data: [0.6, 8.5, 0.88, 0.69],
-                      backgroundColor: color(window.chartColors.yellow)
-                        .alpha(0.2)
-                        .rgbString(),
-                      borderColor: window.chartColors.yellow,
-                      pointBackgroundColor: window.chartColors.yellow,
-                      borderWidth: 1
-                    }
-                  ]
-                },
-                options: {
-                  scale: {
-                    ticks: {
-                      // beginAtZero: true
-                    },
-                    pointLabels: {
-                      fontSize: 20
-                    }
-                  },
-                  title: {
-                    fontSize: 20,
-                    display: true,
-                    text: "Estatisticas em base temporal segundos"
-                  },
-
-                  legend: {
-                    display: true,
-                    position: "right",
-                    maxWidth: 100,
-                    labels: {
-                      fontSize: 20
-                    }
-                  },
-                  tooltips: {
-                    titleFontSize: 15,
-                    bodyFontSize: 25,
-                    callbacks: {
-                      label: function(tooltipItem, data) {
-                        return (
-                          data.datasets[tooltipItem.datasetIndex].label +
-                          " : " +
-                          data.datasets[tooltipItem.datasetIndex].data[
-                            tooltipItem.index
-                          ]
-                        );
-                      }
-                    }
-                  }
-                }
-              });
-            </script>
-          </section>
-
-          <section>
-            <h4 class="text-info text-left">Performance 4G & WiFi</h4>
-            <canvas id="performance-4g" width="400" height="200"></canvas>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <script>
-              var ctx = document
-                .getElementById("performance-4g")
-                .getContext("2d");
-              var color = Chart.helpers.color;
-              var myChart = new Chart(ctx, {
-                type: "radar",
-                data: {
-                  labels: [
-                    "HTML (1.60KB)",
-                    "JS (1.40KB)",
-                    "CSS (30KB)",
-                    "API (9KB)"
-                  ],
-                  datasets: [
-                    {
-                      label: "Firefox",
-                      data: [0.04, 0.05, 0.04, 0.1],
-                      backgroundColor: color(window.chartColors.red)
-                        .alpha(0.2)
-                        .rgbString(),
-                      borderColor: window.chartColors.red,
-                      pointBackgroundColor: window.chartColors.red,
-                      borderWidth: 1
-                    },
-                    {
-                      label: "Chrome",
-                      data: [0.03, 0.01, 0.001, 0.1],
-                      backgroundColor: color(window.chartColors.blue)
-                        .alpha(0.2)
-                        .rgbString(),
-                      borderColor: window.chartColors.blue,
-                      pointBackgroundColor: window.chartColors.blue,
-                      borderWidth: 1
-                    },
-                    {
-                      label: "Chromiun",
-                      data: [0.02, 0.037, 0.007, 0.1],
-                      backgroundColor: color(window.chartColors.yellow)
-                        .alpha(0.2)
-                        .rgbString(),
-                      borderColor: window.chartColors.yellow,
-                      pointBackgroundColor: window.chartColors.yellow,
-                      borderWidth: 1
-                    }
-                  ]
-                },
-                options: {
-                  scale: {
-                    ticks: {
-                      // beginAtZero: true
-                    },
-                    pointLabels: {
-                      fontSize: 20
-                    }
-                  },
-                  title: {
-                    fontSize: 20,
-                    display: true,
-                    text: "Estatisticas em base temporal segundos"
-                  },
-                  legend: {
-                    display: true,
-                    position: "right",
-                    maxWidth: 100,
-                    labels: {
-                      fontSize: 20
-                    }
-                  },
-                  tooltips: {
-                    titleFontSize: 15,
-                    bodyFontSize: 25,
-                    callbacks: {
-                      label: function(tooltipItem, data) {
-                        return (
-                          data.datasets[tooltipItem.datasetIndex].label +
-                          " : " +
-                          data.datasets[tooltipItem.datasetIndex].data[
-                            tooltipItem.index
-                          ]
-                        );
-                      }
-                    }
-                  }
-                }
-              });
-            </script>
-          </section>
-        </section>
-
-        <!-- Performance -->
-
-        <!-- Conlusoes -->
-        <section>
-          <section>
-            <h4 class="text-info text-left">Conlusões</h4>
-            <p class="text-justify" style="font-size: 20pt">
-              Após a busca pela revisão bibliográfica verificou-se alguns
-              conceitos relacionados a gestão patrimonial assim como aos
-              sistemas inerentes a esta, o que permitiu o desenvolvimento de um
-              sistema integrado de gestão patrimonial.
-              <br />
-              <br />
-              Tendo em conta o processo atual para gestão de património
-              Unizambeze, no qual demostra que há imenso dispêndio de recursos
-              de vária ordem, desde financeiros ate logísticos, o sistema foi
-              desenvolvido de forma a auxiliar aquilo que são as necessidades de
-              redução de custos que esta área possui na Universidade Zambeze.
-
-              <br />
-              <br />
-              Com o levantamento de requisitos e com a definição das ferramentas
-              a serem utilizadas no desenvolvimento do sistema foi possível
-              fazer o desenho e implementação do protótipo do sistema de acordo
-              com as necessidades da Universidade no que concerne ao processo de
-              gestão de património.
-              <br />
-              <br />
-              Sendo assim com a implementação desse sistema na Universidade
-              Zambeze espera-se prover maior independência na gestão do
-              património.
-            </p>
-          </section>
-
-          <section>
-            <h4 class="text-info text-left">Recomendacoes</h4>
-            <p class="text-justify" style="font-size: 25pt">
-              Face ao possível e previsível risco da não continuidade do sistema
-              e de resistência a mudanças por parte dos usuários recomenda-se
-              que sejam ministradas capacitações para melhorar a interação com o
-              sistema, o que fará com que os envolvidos deem continuidade e se
-              comprometam com as atividades, inclusive buscando melhorias, o que
-              pode ser um ponto fulcral para que este projeto seja replicado em
-              outras instituições, não somente públicas, mas também as privadas.
-              <br />
-              <br />
-              Aos desenvolvedores é recomendável que usem abordagens de
-              desenvolvimento que permitam que seus sistemas se intercomuniquem
-              com outros sistemas de modo a fazer troca de informação, e a
-              garantir também uma maior longevidade a estes.
-            </p>
-          </section>
-
-          <section>
-            <h4 class="text-info text-left">Estudos futuros</h4>
-
-            <p class="text-justify">
-              Tendo em conta que o processo de desenvolvimento é muito longo e
-              seu detalhamento extrapola qualquer fronteira que uma monografia
-              define, sendo assim apos a submissão deste documento pretende-se
-              continuar com o desenvolvimento das funcionalidades cruciais para
-              o sistema operar, assim como desenvolvimento daquilo que é a
-              integração com o SISTAFE, através da geração de planilhas de
-              Excel, ficheiros CSV e outros padrões que o sistema SISTAFE
-              suporte, de modo criar maior comodismo aos seus utilizadores.
-            </p>
-          </section>
-        </section>
-        <!-- Conlusoes -->
-
-        <!-- Creditos -->
-        <section>
-          <h4 class="text-info text-left">Creditos</h4>
-          <p>Engº. Rui Miguel Inácio</p>
-          <p>Engº. Alcamate Dossa</p>
-          <p>Engº. Ruben Frio</p>
-        </section>
-        <!-- Creditos -->
-
-        <!-- Demonstração -->
-        <section>
-          <section>
-            <h4 class="text-info text-left">Demostração</h4>
-          </section>
-
-          <section
-            data-background-iframe="http://localhost:8000"
-            data-background-interactive
-          ></section>
-        </section>
-        <!-- Demonstração -->
-
-        <section id="themes">
-          <h2>Alterar tema</h2>
-          <p>
-            <br />
-            <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-            <a
-              href="#"
-              onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;"
-              >Preto</a
-            >
-            -
-            <a
-              href="#"
-              onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;"
-              >Branco</a
-            >
-            -
-            <a
-              href="#"
-              onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;"
-              >League</a
-            >
-            -
-            <a
-              href="#"
-              onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;"
-              >Azul</a
-            >
-            -
-            <a
-              href="#"
-              onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;"
-              >Beige</a
-            >
-
-            -
-            <a
-              href="#"
-              onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;"
-              >Vermelho</a
-            >
-            -
-            <a
-              href="#"
-              onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;"
-              >Simplicidade</a
-            >
-            -
-            <a
-              href="#"
-              onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;"
-              >Modo noturno</a
-            >
-            -
-            <a
-              href="#"
-              onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;"
-              >Azul 2</a
-            >
-            -
-            <a
-              href="#"
-              onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;"
-              >Modo luminoso</a
-            >
+          <h4 class="text-info text-left">Diagrama de casos de uso</h4>
+          <p class="text-justify" style="font-size: 25pt;">
+            Diagramas de casos de uso buscam apresentar o sistema na
+            perspetiva do usuário , demonstrando as funcionalidades (casos de
+            uso) e os serviços oferecidos e quais usuários poderão usar cada
+            funcionalidade.
+            <br /><br />
+            Diagramas de casos de uso são usados maioritariamente na modelagem
+            do sistema, durante o levantamento e análise de requisitos, sendo
+            possivelmente alterados a medida que se segue com a engenharia de
+            software, este também serve de base para outros diagramas.
           </p>
         </section>
 
-        <section style="text-align: left;">
-          <h1>Fim</h1>
+        <section data-background-iframe="images/diagramas/casos-de-uso/000-pkge.svg" data-background-interactive>
+          <div style="
+								position: absolute;
+								width: 40%;
+								top: 30rem;
+								right: 0;
+								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+								background-color: rgba(0, 0, 0, 0.2);
+								color: #fff;
+
+								padding-top: 20px;
+								padding-left: 20px;
+								padding-right: 20px;
+								padding-bottom: 5px;
+
+								font-size: 15px;
+								text-align: left;">
+            <h2 class="text-white">Diagrama de pacotes para casos de uso</h2>
+          </div>
         </section>
-      </div>
+
+        <section data-background-iframe="images/diagramas/casos-de-uso/000-actors.svg" data-background-interactive>
+          <div style="
+								position: absolute;
+								width: 40%;
+								top: 30rem;
+								right: 0;
+								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+								background-color: rgba(0, 0, 0, 0.2);
+								color: #fff;
+
+								padding-top: 20px;
+								padding-left: 20px;
+								padding-right: 20px;
+								padding-bottom: 5px;
+
+								font-size: 15px;
+								text-align: left;">
+            <h2 class="text-white">Hierarquia de atores</h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/diagramas/casos-de-uso/001-user.svg" data-background-interactive>
+          <div style="
+								position: absolute;
+								width: 40%;
+								top: 30rem;
+								right: 0;
+								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+								background-color: rgba(0, 0, 0, 0.2);
+								color: #fff;
+
+								padding-top: 20px;
+								padding-left: 20px;
+								padding-right: 20px;
+								padding-bottom: 5px;
+
+								font-size: 15px;
+								text-align: left;">
+            <h2 class="text-white">Subsistema do Usuario</h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/diagramas/casos-de-uso/002-admin-local.svg" data-background-interactive>
+          <div style="
+								position: absolute;
+								width: 40%;
+								top: 30rem;
+								right: 0;
+								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+								background-color: rgba(0, 0, 0, 0.2);
+								color: #fff;
+
+								padding-top: 20px;
+								padding-left: 20px;
+								padding-right: 20px;
+								padding-bottom: 5px;
+
+								font-size: 15px;
+								text-align: left;">
+            <h2 class="text-white">Subsistema do Administrador Local</h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/diagramas/casos-de-uso/003-admin-universitario.svg"
+          data-background-interactive>
+          <div style="
+								position: absolute;
+								width: 40%;
+								top: 30rem;
+								right: 0;
+								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+								background-color: rgba(0, 0, 0, 0.2);
+								color: #fff;
+
+								padding-top: 20px;
+								padding-left: 20px;
+								padding-right: 20px;
+								padding-bottom: 5px;
+
+								font-size: 15px;
+								text-align: left;">
+            <h2 class="text-white">
+              Subsistema do administrador universitário
+            </h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/diagramas/casos-de-uso/004-relatorios.svg" data-background-interactive>
+          <div style="
+								position: absolute;
+								width: 40%;
+								top: 30rem;
+								right: 0;
+								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+								background-color: rgba(0, 0, 0, 0.2);
+								color: #fff;
+
+								padding-top: 20px;
+								padding-left: 20px;
+								padding-right: 20px;
+								padding-bottom: 5px;
+
+								font-size: 15px;
+								text-align: left;">
+            <h2 class="text-white">Subsistema de gestão de relatórios</h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/diagramas/casos-de-uso/005-external-system.svg"
+          data-background-interactive>
+          <div style="
+								position: absolute;
+								width: 40%;
+								top: 30rem;
+								right: 0;
+								box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+								background-color: rgba(0, 0, 0, 0.2);
+								color: #fff;
+
+								padding-top: 20px;
+								padding-left: 20px;
+								padding-right: 20px;
+								padding-bottom: 5px;
+
+								font-size: 15px;
+								text-align: left;">
+            <h2 class="text-white">Subsistema de acesso externo</h2>
+          </div>
+        </section>
+      </section>
+
+      <!-- Diagrama de Casos de uso -->
+
+      <!-- Requisitos do Sistema -->
+      <section>
+        <section>
+          <h4 class="text-info text-left">Classificação​ de requisitos</h4>
+
+          <p class="text-justify">
+            No que tange ao processo de coleta de requisitos este culminou com
+            a classificação dos requisitos da forma disposta na tabela baixo.
+          </p>
+
+          <table class="table pt-2">
+            <thead>
+              <tr>
+                <th scope="col" style="font-size: 25">
+                  Requisitos De Usuário
+                </th>
+                <th scope="col" style="font-size: 25">
+                  Requisitos Funcionais
+                </th>
+                <th scope="col" style="font-size: 25">
+                  Requisitos Não Funcionais
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>7</td>
+                <td>14</td>
+                <td>6</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section data-background-iframe="requisitos.html" data-background-interactive></section>
+      </section>
+
+      <!-- Requisitos do Sistema -->
+
+      <!-- Diagrama de Classes -->
+      <section>
+        <section>
+          <h4 class="text-info text-left">Diagrama de Classes</h4>
+        </section>
+
+        <section data-background-iframe="images/diagramas/classes/000-pkg-use-case.svg" data-background-interactive>
+          <div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(0, 0, 0, 0.2);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+            <h2 class="text-white">Diagrama de pacotes para Classes</h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/diagramas/classes/001-patrimonio.svg" data-background-interactive>
+          <div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(0, 0, 0, 0.2);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+            <h2 class="text-white">
+              Diagrama de Classes para o pacote dos modelos de património
+            </h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/diagramas/classes/002-universidade.svg" data-background-interactive>
+          <div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(0, 0, 0, 0.2);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+            <h2 class="text-white">
+              Diagrama de Classes para o pacote dos modelos da universidade
+            </h2>
+          </div>
+        </section>
+      </section>
+      <!-- Diagrama de Classes -->
+
+      <!-- Modelo de banco de dados -->
+      <section>
+        <section>
+          <h4 class="text-info text-left">Modelo de banco de dados</h4>
+        </section>
+
+        <section data-background-iframe="images/database/universidade.svg" data-background-interactive>
+          <div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(238, 226, 226, 0.911);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+            <h2 class="text-black">Modelo de organização universitaria</h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/database/patrimonio-core.svg" data-background-interactive>
+          <div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(238, 226, 226, 0.911);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+            <h2 class="text-black">Modelo Nuclear do patrimônio</h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/database/patrimonio-extended.svg" data-background-interactive>
+          <div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(238, 226, 226, 0.911);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+            <h2 class="text-black">Modelo extendido do patrimônio</h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/database/patrimonio-extended.svg" data-background-interactive>
+          <div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(238, 226, 226, 0.911);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+            <h2 class="text-black">Modelo de operacoes</h2>
+          </div>
+        </section>
+
+        <section data-background-iframe="images/database/passport.svg" data-background-interactive>
+          <div style="
+							position: absolute;
+							width: 40%;
+							top: 30rem;
+							right: 0;
+							box-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 5px 25px rgba(0,0,0,0.2);
+							background-color: rgba(238, 226, 226, 0.911);
+							color: #fff;
+
+							padding-top: 20px;
+							padding-left: 20px;
+							padding-right: 20px;
+							padding-bottom: 5px;
+
+							font-size: 15px;
+							text-align: left;">
+            <h2 class="text-black">
+              Modelo de gestão de requisições externas
+            </h2>
+          </div>
+        </section>
+      </section>
+      <!-- Modelo de banco de dados -->
+
+      <!-- API e seguranca da aplicação -->
+      <section>
+        <section>
+          <h4 class="text-info text-left">Interconeção de sistemas</h4>
+          <p class="text-justify" style="font-size: 30pt">
+            Baseados nos casos de uso e nos requisitos anteriorimente
+            definidos e para este sistema a API foi desenvolvida de modo a
+            executar essas ações, uma vez que há uma multiplicidade de
+            funcionalidades que consumidores desta podem desejar é alcançar
+            uma visão do usuário da API para entender o que deve ser feito com
+            as bibliotecas da API, por que e como fazê-la.
+          </p>
+        </section>
+        <!-- Sistemas Web -->
+        <section data-background="images/web.png" data-background-size="contain" data-background-opacity="0.02">
+          <h4 class="text-left text-info">API ouServiços web</h4>
+          <p class="text-justify" style="font-size: 27pt">
+            Em um sentido mais generalista um <strong>serviço web</strong> é
+            uma coleção de padrões e protocolos abertos, usados para troca de
+            dados entra plataformas, ou seja, que pode ser acedido via chamada
+            de método por uma aplicação ou por algum outro componente de
+            software por meio de uma rede. ​
+            <br />
+            Esses recursos são maioritariamente implementados usando os
+            padroes SOAP e REST
+          </p>
+        </section>
+
+        <section>
+          <h4 class="text-left text-info">
+            Arquitetura basica de Serviços Web
+          </h4>
+          <img src="images/api.png" height="450px" class="card-img-top border-0" alt="..." />
+        </section>
+        <!-- Sistemas Web -->
+
+        <section>
+          <h4 class="text-info text-left">Corpo de uma requisição a API</h4>
+          <p class="text-info text-justify">
+            Exemplo para requisição de login
+          </p>
+          <p class="text-justify" style="font-size: 25pt">
+            Envia-se uma requisição para a URI: https://dominio/<strong>oauth/login</strong>
+          </p>
+
+          <img src="images\corpo-da-requisicao-login.png" class="border-0" alt="" />
+        </section>
+
+        <section>
+          <h4 class="text-info text-left">Resposta a API</h4>
+          <img src="images\resposta-api.png" class="border-0" alt="" />
+        </section>
+
+        <section>
+          <h4 class="text-info text-left">Interconeção ao SISTAFE</h4>
+          <p class="text-justify" style="font-size: 30pt">
+            Para interconectar ao SISTAFE se usará o mecanismo de exportação e
+            importação de dados. Essa mecanismo estará estabelecido via troca
+            de ficheiros em formatos EXCEL, CSV e ou JSON
+          </p>
+          <img src="images\exports.png" class="border-0" alt="" />
+        </section>
+
+        <section>
+          <h4 class="text-info text-left">Segurança da aplicação</h4>
+
+          <p class="text-justify mb-5 pb-3" style="font-size: 27pt">
+            No que concerne a segurança da aplicação, será aplicada em
+            ambiente de produção uma segurança em 5 camadas
+          </p>
+          <p class="text-justify" style="font-size: 25pt">
+            <strong>CDN</strong>: Redes de Distribuição de conteudo.
+          </p>
+
+          <p class="text-justify" style="font-size: 25pt">
+            <strong>TLS/SSL</strong>: Protocolos de segurança da camada de
+            Aplicação(Modelo TCP/IP)
+          </p>
+          <p class="text-justify" style="font-size: 25pt">
+            <strong>Token CSRF(Cross-Site Request Forgery)</strong>: Mecanismo
+            de verificação de entidades emissoras de pedidos HTTP
+          </p>
+          <p class="text-justify" style="font-size: 25pt">
+            <strong>Credenciais</strong>: Email e Password
+          </p>
+          <p class="text-justify" style="font-size: 25pt">
+            <strong>oAuth</strong>: Mecanismo de autenticação de aplicações e
+            gestão de escopos de acesso.
+          </p>
+        </section>
+      </section>
+
+      <!-- API e seguranca da aplicação -->
+
+      <!-- Performance -->
+      <section>
+        <section>
+          <h4 class="text-info text-left">Performance</h4>
+          <p class="text-justify">
+            Um ponto a se tomar em consideração no desenvolvimento de sistemas
+            é a questão do tempo de resposta que sistema dá para as interações
+            com usuário, pois “um sistema lento está fadado a morrer” nesse
+            contexto foram avaliadas os tempos de resposta em ambiente de
+            desenvolvimento local com 3 navegadores destintos (Chrome,
+            Firefox, Chromiun), conexões de rede desde a 2G até 4G/WIFI.
+          </p>
+        </section>
+
+        <section>
+          <h4 class="text-info text-left">Performance 2G</h4>
+          <canvas id="performance-2g" width="400" height="200"></canvas>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <script>
+            var ctx = document
+              .getElementById("performance-2g")
+              .getContext("2d");
+            var color = Chart.helpers.color;
+            var myChart = new Chart(ctx, {
+              type: "radar",
+              data: {
+                labels: [
+                  "HTML (1.60KB)",
+                  "JS (1.40KB)",
+                  "CSS (30KB)",
+                  "API (9KB)"
+                ],
+                datasets: [
+                  {
+                    label: "Firefox",
+                    data: [0.084, 288, 0.011, 7.41],
+                    backgroundColor: color(window.chartColors.red)
+                      .alpha(0.2)
+                      .rgbString(),
+                    borderColor: window.chartColors.red,
+                    pointBackgroundColor: window.chartColors.red,
+                    borderWidth: 1
+                  },
+                  {
+                    label: "Chrome",
+                    data: [0.523, 84, 84, 841],
+                    backgroundColor: color(window.chartColors.blue)
+                      .alpha(0.2)
+                      .rgbString(),
+                    borderColor: window.chartColors.blue,
+                    pointBackgroundColor: window.chartColors.blue,
+                    borderWidth: 1
+                  },
+                  {
+                    label: "Chromiun",
+                    data: [0.057, 288, 0.011, 7.43],
+                    backgroundColor: color(window.chartColors.yellow)
+                      .alpha(0.2)
+                      .rgbString(),
+                    borderColor: window.chartColors.yellow,
+                    pointBackgroundColor: window.chartColors.yellow,
+                    borderWidth: 1
+                  }
+                ]
+              },
+              options: {
+                scale: {
+                  ticks: {
+                    // beginAtZero: true
+                  },
+                  pointLabels: {
+                    fontSize: 20
+                  }
+                },
+                title: {
+                  fontSize: 20,
+                  display: true,
+                  text: "Estatisticas em base temporal segundos"
+                },
+                legend: {
+                  display: true,
+                  position: "right",
+                  maxWidth: 100,
+                  labels: {
+                    fontSize: 20
+                  }
+                },
+                tooltips: {
+                  titleFontSize: 15,
+                  bodyFontSize: 25,
+                  callbacks: {
+                    label: function (tooltipItem, data) {
+                      return (
+                        data.datasets[tooltipItem.datasetIndex].label +
+                        " : " +
+                        data.datasets[tooltipItem.datasetIndex].data[
+                        tooltipItem.index
+                        ]
+                      );
+                    }
+                  }
+                }
+              }
+            });
+          </script>
+        </section>
+
+        <section>
+          <h4 class="text-info text-left">Performance 3G</h4>
+          <canvas id="performance-3g" width="400" height="200"></canvas>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <script>
+            var ctx = document
+              .getElementById("performance-3g")
+              .getContext("2d");
+            var color = Chart.helpers.color;
+            var myChart = new Chart(ctx, {
+              type: "radar",
+              data: {
+                labels: [
+                  "HTML (1.60KB)",
+                  "JS (1.40KB)",
+                  "CSS (30KB)",
+                  "API (9KB)"
+                ],
+                datasets: [
+                  {
+                    label: "Firefox",
+                    data: [0.58, 0.7, 0.9, 0.73],
+                    backgroundColor: color(window.chartColors.red)
+                      .alpha(0.2)
+                      .rgbString(),
+                    borderColor: window.chartColors.red,
+                    pointBackgroundColor: window.chartColors.red,
+                    borderWidth: 1
+                  },
+                  {
+                    label: "Chrome",
+                    data: [0.09, 7.15, 0.07, 0.17],
+                    backgroundColor: color(window.chartColors.blue)
+                      .alpha(0.2)
+                      .rgbString(),
+                    borderColor: window.chartColors.blue,
+                    pointBackgroundColor: window.chartColors.blue,
+                    borderWidth: 1
+                  },
+                  {
+                    label: "Chromiun",
+                    data: [0.6, 8.5, 0.88, 0.69],
+                    backgroundColor: color(window.chartColors.yellow)
+                      .alpha(0.2)
+                      .rgbString(),
+                    borderColor: window.chartColors.yellow,
+                    pointBackgroundColor: window.chartColors.yellow,
+                    borderWidth: 1
+                  }
+                ]
+              },
+              options: {
+                scale: {
+                  ticks: {
+                    // beginAtZero: true
+                  },
+                  pointLabels: {
+                    fontSize: 20
+                  }
+                },
+                title: {
+                  fontSize: 20,
+                  display: true,
+                  text: "Estatisticas em base temporal segundos"
+                },
+
+                legend: {
+                  display: true,
+                  position: "right",
+                  maxWidth: 100,
+                  labels: {
+                    fontSize: 20
+                  }
+                },
+                tooltips: {
+                  titleFontSize: 15,
+                  bodyFontSize: 25,
+                  callbacks: {
+                    label: function (tooltipItem, data) {
+                      return (
+                        data.datasets[tooltipItem.datasetIndex].label +
+                        " : " +
+                        data.datasets[tooltipItem.datasetIndex].data[
+                        tooltipItem.index
+                        ]
+                      );
+                    }
+                  }
+                }
+              }
+            });
+          </script>
+        </section>
+
+        <section>
+          <h4 class="text-info text-left">Performance 4G & WiFi</h4>
+          <canvas id="performance-4g" width="400" height="200"></canvas>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <script>
+            var ctx = document
+              .getElementById("performance-4g")
+              .getContext("2d");
+            var color = Chart.helpers.color;
+            var myChart = new Chart(ctx, {
+              type: "radar",
+              data: {
+                labels: [
+                  "HTML (1.60KB)",
+                  "JS (1.40KB)",
+                  "CSS (30KB)",
+                  "API (9KB)"
+                ],
+                datasets: [
+                  {
+                    label: "Firefox",
+                    data: [0.04, 0.05, 0.04, 0.1],
+                    backgroundColor: color(window.chartColors.red)
+                      .alpha(0.2)
+                      .rgbString(),
+                    borderColor: window.chartColors.red,
+                    pointBackgroundColor: window.chartColors.red,
+                    borderWidth: 1
+                  },
+                  {
+                    label: "Chrome",
+                    data: [0.03, 0.01, 0.001, 0.1],
+                    backgroundColor: color(window.chartColors.blue)
+                      .alpha(0.2)
+                      .rgbString(),
+                    borderColor: window.chartColors.blue,
+                    pointBackgroundColor: window.chartColors.blue,
+                    borderWidth: 1
+                  },
+                  {
+                    label: "Chromiun",
+                    data: [0.02, 0.037, 0.007, 0.1],
+                    backgroundColor: color(window.chartColors.yellow)
+                      .alpha(0.2)
+                      .rgbString(),
+                    borderColor: window.chartColors.yellow,
+                    pointBackgroundColor: window.chartColors.yellow,
+                    borderWidth: 1
+                  }
+                ]
+              },
+              options: {
+                scale: {
+                  ticks: {
+                    // beginAtZero: true
+                  },
+                  pointLabels: {
+                    fontSize: 20
+                  }
+                },
+                title: {
+                  fontSize: 20,
+                  display: true,
+                  text: "Estatisticas em base temporal segundos"
+                },
+                legend: {
+                  display: true,
+                  position: "right",
+                  maxWidth: 100,
+                  labels: {
+                    fontSize: 20
+                  }
+                },
+                tooltips: {
+                  titleFontSize: 15,
+                  bodyFontSize: 25,
+                  callbacks: {
+                    label: function (tooltipItem, data) {
+                      return (
+                        data.datasets[tooltipItem.datasetIndex].label +
+                        " : " +
+                        data.datasets[tooltipItem.datasetIndex].data[
+                        tooltipItem.index
+                        ]
+                      );
+                    }
+                  }
+                }
+              }
+            });
+          </script>
+        </section>
+      </section>
+
+      <!-- Performance -->
+
+      <!-- Conlusoes -->
+      <section>
+        <section>
+          <h4 class="text-info text-left">Conlusões</h4>
+          <p class="text-justify" style="font-size: 20pt">
+            Após a busca pela revisão bibliográfica verificou-se alguns
+            conceitos relacionados a gestão patrimonial assim como aos
+            sistemas inerentes a esta, o que permitiu o desenvolvimento de um
+            sistema integrado de gestão patrimonial.
+            <br />
+            <br />
+            Tendo em conta o processo atual para gestão de património
+            Unizambeze, no qual demostra que há imenso dispêndio de recursos
+            de vária ordem, desde financeiros ate logísticos, o sistema foi
+            desenvolvido de forma a auxiliar aquilo que são as necessidades de
+            redução de custos que esta área possui na Universidade Zambeze.
+
+            <br />
+            <br />
+            Com o levantamento de requisitos e com a definição das ferramentas
+            a serem utilizadas no desenvolvimento do sistema foi possível
+            fazer o desenho e implementação do protótipo do sistema de acordo
+            com as necessidades da Universidade no que concerne ao processo de
+            gestão de património.
+            <br />
+            <br />
+            Sendo assim com a implementação desse sistema na Universidade
+            Zambeze espera-se prover maior independência na gestão do
+            património.
+          </p>
+        </section>
+
+        <section>
+          <h4 class="text-info text-left">Recomendacoes</h4>
+          <p class="text-justify" style="font-size: 25pt">
+            Face ao possível e previsível risco da não continuidade do sistema
+            e de resistência a mudanças por parte dos usuários recomenda-se
+            que sejam ministradas capacitações para melhorar a interação com o
+            sistema, o que fará com que os envolvidos deem continuidade e se
+            comprometam com as atividades, inclusive buscando melhorias, o que
+            pode ser um ponto fulcral para que este projeto seja replicado em
+            outras instituições, não somente públicas, mas também as privadas.
+            <br />
+            <br />
+            Aos desenvolvedores é recomendável que usem abordagens de
+            desenvolvimento que permitam que seus sistemas se intercomuniquem
+            com outros sistemas de modo a fazer troca de informação, e a
+            garantir também uma maior longevidade a estes.
+          </p>
+        </section>
+
+        <section>
+          <h4 class="text-info text-left">Estudos futuros</h4>
+
+          <p class="text-justify">
+            Tendo em conta que o processo de desenvolvimento é muito longo e
+            seu detalhamento extrapola qualquer fronteira que uma monografia
+            define, sendo assim apos a submissão deste documento pretende-se
+            continuar com o desenvolvimento das funcionalidades cruciais para
+            o sistema operar, assim como desenvolvimento daquilo que é a
+            integração com o SISTAFE, através da geração de planilhas de
+            Excel, ficheiros CSV e outros padrões que o sistema SISTAFE
+            suporte, de modo criar maior comodismo aos seus utilizadores.
+          </p>
+        </section>
+      </section>
+      <!-- Conlusoes -->
+
+      <!-- Creditos -->
+      <section>
+        <h4 class="text-info text-left">Creditos</h4>
+        <p>Engº. Rui Miguel Inácio</p>
+        <p>Engº. Alcamate Dossa</p>
+        <p>Engº. Ruben Frio</p>
+      </section>
+      <!-- Creditos -->
+
+      <!-- Demonstração -->
+      <section>
+        <section>
+          <h4 class="text-info text-left">Demostração</h4>
+        </section>
+
+        <section data-background-iframe="http://localhost:8000" data-background-interactive></section>
+      </section>
+      <!-- Demonstração -->
+
+      <section id="themes">
+        <h2>Alterar tema</h2>
+        <p>
+          <br />
+          <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+          <a href="#"
+            onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Preto</a>
+          -
+          <a href="#"
+            onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">Branco</a>
+          -
+          <a href="#"
+            onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a>
+          -
+          <a href="#"
+            onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Azul</a>
+          -
+          <a href="#"
+            onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a>
+
+          -
+          <a href="#"
+            onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Vermelho</a>
+          -
+          <a href="#"
+            onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simplicidade</a>
+          -
+          <a href="#"
+            onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Modo
+            noturno</a>
+          -
+          <a href="#"
+            onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Azul
+            2</a>
+          -
+          <a href="#"
+            onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Modo
+            luminoso</a>
+        </p>
+      </section>
+
+      <section style="text-align: left;">
+        <h1>Fim</h1>
+      </section>
     </div>
+  </div>
 
-    <script src="js/reveal.js"></script>
+  <script src="js/reveal.js"></script>
 
-    <script>
-      // More info https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        center: true,
-        hash: true,
+  <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      hash: true,
 
-        transition: "slide", // none/fade/slide/convex/concave/zoom
+      transition: "slide", // none/fade/slide/convex/concave/zoom
 
-        // parallaxBackgroundImage:  "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg",
+      // parallaxBackgroundImage:  "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg",
 
-        // 	// Parallax background size
-        // parallaxBackgroundSize: "2100px 900px" ,
+      // 	// Parallax background size
+      // parallaxBackgroundSize: "2100px 900px" ,
 
-        // // Number of pixels to move the parallax background per slide
-        // // - Calculated automatically unless specified
-        // // - Set to 0 to disable movement along an axis
-        // parallaxBackgroundHorizontal: 200,
-        // parallaxBackgroundVertical: 50,
+      // // Number of pixels to move the parallax background per slide
+      // // - Calculated automatically unless specified
+      // // - Set to 0 to disable movement along an axis
+      // parallaxBackgroundHorizontal: 200,
+      // parallaxBackgroundVertical: 50,
 
-        // More info https://github.com/hakimel/reveal.js#dependencies
-        dependencies: [
-          {
-            src: "plugin/markdown/marked.js",
-            condition: function() {
-              return !!document.querySelector("[data-markdown]");
-            }
-          },
-          {
-            src: "plugin/markdown/markdown.js",
-            condition: function() {
-              return !!document.querySelector("[data-markdown]");
-            }
-          },
-          { src: "plugin/highlight/highlight.js", async: true },
-          { src: "plugin/search/search.js", async: true },
-          { src: "plugin/zoom-js/zoom.js", async: true },
-          { src: "plugin/notes/notes.js", async: true }
-        ]
-      });
-    </script>
-  </body>
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+        {
+          src: "plugin/markdown/marked.js",
+          condition: function () {
+            return !!document.querySelector("[data-markdown]");
+          }
+        },
+        {
+          src: "plugin/markdown/markdown.js",
+          condition: function () {
+            return !!document.querySelector("[data-markdown]");
+          }
+        },
+        { src: "plugin/highlight/highlight.js", async: true },
+        { src: "plugin/search/search.js", async: true },
+        { src: "plugin/zoom-js/zoom.js", async: true },
+        { src: "plugin/notes/notes.js", async: true }
+      ]
+    });
+  </script>
+</body>
+
 </html>
